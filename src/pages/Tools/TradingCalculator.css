@@ -1,0 +1,237 @@
+/* TradingCalculator.css */
+
+.page-container {
+    padding-top: 120px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff, #00c6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .section {
+    margin-bottom: 4rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #00c6ff;
+    padding-left: 1rem;
+  }
+  
+  .calculator-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .formula {
+    background: rgba(0, 114, 255, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .formula p {
+    margin-bottom: 0;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  
+  .examples ul, .rr-tips ul {
+    margin: 0.5rem 0 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  .examples li {
+    margin-bottom: 0.25rem;
+  }
+  
+  .quick-reference {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .quick-item {
+    background: rgba(0, 198, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .risk-rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .risk-rule {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .rule-percent {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c6ff;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .risk-rule p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
+  
+  .example-risk {
+    background: rgba(0, 114, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+  }
+  
+  .margin-table {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .margin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .margin-item {
+    background: rgba(0, 198, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .winrate-table {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .winrate-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .winrate-item:last-child {
+    border-bottom: none;
+  }
+  
+  .winrate-item span:first-child {
+    color: #00c6ff;
+  }
+  
+  .next-steps {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .next-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .next-link {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .next-link span {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .next-link small {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+  }
+  
+  .next-link:hover {
+    background: rgba(0, 198, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .content-wrapper {
+      padding: 2rem 1rem;
+    }
+    
+    .section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .quick-grid, .risk-rules, .margin-grid {
+      grid-template-columns: 1fr;
+    }
+  }

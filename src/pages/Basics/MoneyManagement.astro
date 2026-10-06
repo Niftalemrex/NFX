@@ -1,0 +1,267 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './MoneyManagement.css';
+---
+
+<Layout title="Money Management - NFX Learning">
+
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Money Management</h1>
+        <p class="subtitle">Position sizing, leverage, and capital preservation strategies</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Money Management?</h2>
+        <p>
+          Money management is how you control the size of your positions, use leverage, and manage your overall 
+          capital. Good money management keeps you in the game long enough for your edge to play out.
+        </p>
+      </section>
+
+      <!-- Position Sizing Methods -->
+      <section class="section">
+        <h2>Position Sizing Methods</h2>
+        
+        <div class="method-card">
+          <h3>Fixed Fractional (Recommended)</h3>
+          <p>Risk a fixed percentage of your account on each trade (1-2%).</p>
+          <div class="example">Example: $10,000 account → Risk $100 per trade (1%)</div>
+          <div class="pros">✓ Account grows safely</div>
+          <div class="pros">✓ Reduces risk during drawdowns</div>
+        </div>
+        
+        <div class="method-card">
+          <h3>Fixed Ratio</h3>
+          <p>Increase position size after every X dollars of profit.</p>
+          <div class="example">Example: Add 0.1 lot after every $1,000 profit</div>
+        </div>
+        
+        <div class="method-card">
+          <h3>Kelly Criterion (Advanced)</h3>
+          <p>Mathematical formula to optimize position size based on win rate and R:R.</p>
+          <div class="example">Example: f = (Win Rate × Avg Win) - Loss Rate / Avg Win</div>
+          <div class="cons">⚠️ Aggressive - Use fractional Kelly (25-50%)</div>
+        </div>
+        
+        <div class="method-card">
+          <h3>Fixed Lot (Not Recommended)</h3>
+          <p>Trade same lot size regardless of account size.</p>
+          <div class="cons">✗ Risk increases as account shrinks</div>
+        </div>
+      </section>
+
+      <!-- Understanding Leverage -->
+      <section class="section">
+        <h2>Understanding Leverage</h2>
+        <p>
+          Leverage allows you to control larger positions with less capital. While it magnifies profits, 
+          it also magnifies losses.
+        </p>
+        
+        <div class="leverage-table">
+          <div class="leverage-row header">
+            <span>Leverage</span>
+            <span>Margin Required</span>
+            <span>Position Control</span>
+          </div>
+          <div class="leverage-row">
+            <span>1:10</span>
+            <span>10%</span>
+            <span>$10,000 controls $100,000</span>
+          </div>
+          <div class="leverage-row">
+            <span>1:30</span>
+            <span>3.33%</span>
+            <span>$3,333 controls $100,000</span>
+          </div>
+          <div class="leverage-row">
+            <span>1:50</span>
+            <span>2%</span>
+            <span>$2,000 controls $100,000</span>
+          </div>
+          <div class="leverage-row">
+            <span>1:100</span>
+            <span>1%</span>
+            <span>$1,000 controls $100,000</span>
+          </div>
+          <div class="leverage-row">
+            <span>1:500</span>
+            <span>0.2%</span>
+            <span>$200 controls $100,000</span>
+          </div>
+        </div>
+        
+        <div class="warning-box">
+          <strong>⚠️ Warning:</strong> Higher leverage = Higher risk. A 100-pip move can wipe out your account with 1:500 leverage.
+        </div>
+      </section>
+
+      <!-- Account Growth Strategies -->
+      <section class="section">
+        <h2>Account Growth Strategies</h2>
+        
+        <div class="strategy-card">
+          <h3>Conservative (1% risk)</h3>
+          <div class="growth-sim">
+            <p>Starting: $10,000 | Monthly return: 5%</p>
+            <p>After 12 months: ~$17,958</p>
+            <p>After 24 months: ~$32,254</p>
+          </div>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Moderate (2% risk)</h3>
+          <div class="growth-sim">
+            <p>Starting: $10,000 | Monthly return: 10%</p>
+            <p>After 12 months: ~$31,384</p>
+            <p>After 24 months: ~$98,497</p>
+          </div>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Aggressive (3% risk)</h3>
+          <div class="growth-sim">
+            <p>Starting: $10,000 | Monthly return: 15%</p>
+            <p>After 12 months: ~$53,502</p>
+            <p>After 24 months: ~$286,300</p>
+          </div>
+          <div class="cons">⚠️ Higher risk of large drawdowns</div>
+        </div>
+      </section>
+
+      <!-- Maximum Leverage Recommendations -->
+      <section class="section">
+        <h2>Recommended Leverage by Account Size</h2>
+        <div class="recommendations">
+          <div class="rec-card">
+            <h3>$100 - $1,000</h3>
+            <p>Max 1:100</p>
+            <span>Recommended: 1:50</span>
+          </div>
+          <div class="rec-card">
+            <h3>$1,000 - $5,000</h3>
+            <p>Max 1:50</p>
+            <span>Recommended: 1:30</span>
+          </div>
+          <div class="rec-card">
+            <h3>$5,000 - $20,000</h3>
+            <p>Max 1:30</p>
+            <span>Recommended: 1:20</span>
+          </div>
+          <div class="rec-card">
+            <h3>$20,000+</h3>
+            <p>Max 1:20</p>
+            <span>Recommended: 1:10</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Position Size Calculator Reference -->
+      <section class="section">
+        <h2>Position Size Quick Reference (1% Risk)</h2>
+        <div class="size-table">
+          <div class="size-row header">
+            <span>Account Size</span>
+            <span>1% Risk ($)</span>
+            <span>20 Pip Stop</span>
+            <span>50 Pip Stop</span>
+          </div>
+          <div class="size-row">
+            <span>$1,000</span>
+            <span>$10</span>
+            <span>0.05 lots</span>
+            <span>0.02 lots</span>
+          </div>
+          <div class="size-row">
+            <span>$5,000</span>
+            <span>$50</span>
+            <span>0.25 lots</span>
+            <span>0.10 lots</span>
+          </div>
+          <div class="size-row">
+            <span>$10,000</span>
+            <span>$100</span>
+            <span>0.50 lots</span>
+            <span>0.20 lots</span>
+          </div>
+          <div class="size-row">
+            <span>$25,000</span>
+            <span>$250</span>
+            <span>1.25 lots</span>
+            <span>0.50 lots</span>
+          </div>
+          <div class="size-row">
+            <span>$50,000</span>
+            <span>$500</span>
+            <span>2.50 lots</span>
+            <span>1.00 lots</span>
+          </div>
+          <div class="size-row">
+            <span>$100,000</span>
+            <span>$1,000</span>
+            <span>5.00 lots</span>
+            <span>2.00 lots</span>
+          </div>
+        </div>
+        <p class="note">*Based on EUR/USD with $10/pip per standard lot</p>
+      </section>
+
+      <!-- Scaling In and Out -->
+      <section class="section">
+        <h2>Scaling In & Out</h2>
+        <div class="scaling">
+          <div class="scaling-card">
+            <h3>Scaling In</h3>
+            <p>Adding to winning positions to increase profit potential</p>
+            <div class="example">Example: Start with 0.5 lots, add 0.25 lots at each pullback</div>
+          </div>
+          <div class="scaling-card">
+            <h3>Scaling Out</h3>
+            <p>Taking partial profits to reduce risk</p>
+            <div class="example">Example: Close 50% at 1:1 R:R, let rest run to 2:1</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="section">
+        <h2>Money Management Mistakes to Avoid</h2>
+        <ul class="mistakes">
+          <li>❌ Overtrading (too many positions at once)</li>
+          <li>❌ Revenge trading after losses (increasing size to recover)</li>
+          <li>❌ Using maximum leverage on every trade</li>
+          <li>❌ Not adjusting position size for different stop distances</li>
+          <li>❌ Risking more than 2% on any single trade</li>
+          <li>❌ Adding to losing positions (averaging down)</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Complete Your Basics Learning</h2>
+        <div class="next-links">
+          <a href="/Basics/RiskManagement" class="next-link">
+            <span>Risk Management →</span>
+            <small>Protect your capital</small>
+          </a>
+          <a href="/Basics/TradingPsychology" class="next-link">
+            <span>Trading Psychology →</span>
+            <small>Master your emotions</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

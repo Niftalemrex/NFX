@@ -1,0 +1,230 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './CFDProducts.css';
+---
+
+<Layout title="CFD Products - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>CFD Products</h1>
+        <p class="subtitle">What are CFDs and how they work - A complete guide</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What are CFDs?</h2>
+        <p>
+          A Contract for Difference (CFD) is a financial derivative that allows traders to speculate on price movements 
+          of various assets without owning the underlying asset. CFDs enable trading on margin with leverage, 
+          offering both opportunities and risks.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">No Ownership</div>
+            <div class="stat-label">Trade price movements only</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">Leverage</div>
+            <div class="stat-label">1:2 up to 1:30+</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">Go Long/Short</div>
+            <div class="stat-label">Profit in any market direction</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How CFDs Work -->
+      <section class="section">
+        <h2>How CFDs Work</h2>
+        <div class="explanation-box">
+          <p>
+            When you open a CFD trade, you agree to exchange the difference in the price of an asset from the time 
+            you open the position to when you close it.
+          </p>
+          
+          <div class="example">
+            <h3>Example: Trading Gold CFD</h3>
+            <ul>
+              <li>Gold price: $2,000 → You BUY (expect price to rise)</li>
+              <li>Gold price rises to $2,050 → You profit $50 per unit</li>
+              <li>Gold price falls to $1,950 → You lose $50 per unit</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Types of CFD Markets -->
+      <section class="section">
+        <h2>Types of CFD Markets</h2>
+        <div class="markets-grid">
+          <div class="market-card">
+            <h3>📊 Forex</h3>
+            <p>Currency pairs (EUR/USD, GBP/USD, USD/JPY)</p>
+            <span class="popular">Most Popular</span>
+          </div>
+          <div class="market-card">
+            <h3>📈 Indices</h3>
+            <p>S&P 500, NASDAQ, FTSE 100, DAX</p>
+          </div>
+          <div class="market-card">
+            <h3>🛢️ Commodities</h3>
+            <p>Gold, Silver, Oil, Natural Gas</p>
+          </div>
+          <div class="market-card">
+            <h3>💎 Cryptocurrencies</h3>
+            <p>Bitcoin, Ethereum, Litecoin</p>
+          </div>
+          <div class="market-card">
+            <h3>🏢 Shares/Stocks</h3>
+            <p>Apple, Tesla, Amazon, Google</p>
+          </div>
+          <div class="market-card">
+            <h3>💰 Treasuries/Bonds</h3>
+            <p>US Treasury Bonds, Gilts, Bunds</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advantages -->
+      <section class="section">
+        <h2>Advantages of CFD Trading</h2>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Trade on Margin</h3>
+              <p>Control larger positions with less capital</p>
+            </div>
+          </div>
+          <div class="advantage-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Go Long or Short</h3>
+              <p>Profit from rising AND falling markets</p>
+            </div>
+          </div>
+          <div class="advantage-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>No Ownership Costs</h3>
+              <p>No stamp duty or physical storage fees</p>
+            </div>
+          </div>
+          <div class="advantage-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Global Market Access</h3>
+              <p>Trade thousands of instruments from one platform</p>
+            </div>
+          </div>
+          <div class="advantage-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Hedge Existing Portfolios</h3>
+              <p>Protect against downside risk</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Risks -->
+      <section class="section">
+        <h2>Risks of CFD Trading</h2>
+        <div class="risks-grid">
+          <div class="risk-card">
+            <h3>⚠️ Leverage Risk</h3>
+            <p>Magnifies both profits AND losses. Can lose more than your initial deposit.</p>
+          </div>
+          <div class="risk-card">
+            <h3>⚠️ Market Risk</h3>
+            <p>Prices can move against you quickly, especially during news events.</p>
+          </div>
+          <div class="risk-card">
+            <h3>⚠️ Counterparty Risk</h3>
+            <p>Your broker must be reliable and well-capitalized.</p>
+          </div>
+          <div class="risk-card">
+            <h3>⚠️ Overnight Fees</h3>
+            <p>Positions held overnight incur swap/rollover fees.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CFD Costs -->
+      <section class="section">
+        <h2>Costs of CFD Trading</h2>
+        <div class="costs-table">
+          <div class="cost-row">
+            <span>Spread</span>
+            <span>Difference between buy and sell price - main cost</span>
+          </div>
+          <div class="cost-row">
+            <span>Commission</span>
+            <span>Some brokers charge per trade (usually for shares)</span>
+          </div>
+          <div class="cost-row">
+            <span>Swap/Overnight Fees</span>
+            <span>Cost for holding positions overnight</span>
+          </div>
+          <div class="cost-row">
+            <span>Inactivity Fee</span>
+            <span>Some brokers charge if no trades for 6-12 months</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Long vs Short -->
+      <section class="section">
+        <h2>Going Long vs Going Short</h2>
+        <div class="comparison">
+          <div class="long-card">
+            <h3>📈 LONG (Buy)</h3>
+            <p>You expect price to RISE</p>
+            <ul>
+              <li>Open: Buy at ask price</li>
+              <li>Close: Sell at bid price</li>
+              <li>Profit if price goes up</li>
+            </ul>
+          </div>
+          <div class="short-card">
+            <h3>📉 SHORT (Sell)</h3>
+            <p>You expect price to FALL</p>
+            <ul>
+              <li>Open: Sell at bid price</li>
+              <li>Close: Buy at ask price</li>
+              <li>Profit if price goes down</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Basics</h2>
+        <div class="next-links">
+          <a href="/Basics/CorporateActions" class="next-link">
+            <span>Corporate Actions →</span>
+            <small>Dividends, splits, buybacks</small>
+          </a>
+          <a href="/Basics/ForexGlossary" class="next-link">
+            <span>Forex Glossary →</span>
+            <small>A-Z of trading terms</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

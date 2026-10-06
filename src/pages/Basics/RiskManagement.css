@@ -1,0 +1,301 @@
+/* RiskManagement.css */
+
+.page-container {
+    padding-top: 120px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff, #00c6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .section {
+    margin-bottom: 4rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #00c6ff;
+    padding-left: 1rem;
+  }
+  
+  .rule-box {
+    background: rgba(0, 198, 255, 0.1);
+    border: 2px solid #00c6ff;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .golden-rule {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .example-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .example-box ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .drawdown-table {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .table {
+    margin-top: 1rem;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .row.header {
+    font-weight: bold;
+    color: #00c6ff;
+    background: rgba(0, 114, 255, 0.2);
+  }
+  
+  .bad {
+    color: #ff6666;
+  }
+  
+  .stop-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .stop-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  .stop-card h3 {
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .example {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .formula-box {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.2), rgba(0, 198, 255, 0.1));
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .formula {
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin: 0;
+  }
+  
+  .example-calc {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .example-calc ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.5rem;
+  }
+  
+  .rr-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .rr-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .rr-card.good {
+    border-left: 4px solid #00ff66;
+  }
+  
+  .rr-card.better {
+    border-left: 4px solid #00c6ff;
+  }
+  
+  .rr-card.bad {
+    border-left: 4px solid #ff6666;
+  }
+  
+  .drawdown-limits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .limit-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .correlation-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .correlation {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  .correlation.positive {
+    border-left: 4px solid #00ff66;
+  }
+  
+  .correlation.negative {
+    border-left: 4px solid #ff6666;
+  }
+  
+  .checklist {
+    background: rgba(0, 114, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .check-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .check-item:last-child {
+    border-bottom: none;
+  }
+  
+  .next-steps {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .next-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .next-link {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .next-link span {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .next-link small {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+  }
+  
+  .next-link:hover {
+    background: rgba(0, 198, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .content-wrapper {
+      padding: 2rem 1rem;
+    }
+    
+    .section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .row {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 0.25rem;
+    }
+    
+    .stop-types, .rr-examples, .drawdown-limits, .correlation-table {
+      grid-template-columns: 1fr;
+    }
+    
+    .formula {
+      font-size: 0.9rem;
+    }
+  }

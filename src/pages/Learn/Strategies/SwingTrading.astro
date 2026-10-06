@@ -1,0 +1,248 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './SwingTrading.css';
+---
+
+<Layout title="Swing Trading Strategy - NFX Learning">
+
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Swing Trading Strategy</h1>
+        <p class="subtitle">Capture medium-term market moves for consistent profits</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Swing Trading?</h2>
+        <p>
+          Swing trading is a medium-term strategy where traders hold positions for several days to weeks, 
+          aiming to capture "swings" in market momentum. It's perfect for traders who can't watch charts all day.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">Days - Weeks</div>
+            <div class="stat-label">Trade Duration</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">50-200 pips</div>
+            <div class="stat-label">Target Profit</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">1-10</div>
+            <div class="stat-label">Monthly Trades</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Characteristics -->
+      <section class="section">
+        <h2>Key Characteristics</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Medium Timeframes</h3>
+            <p>4H, Daily, Weekly charts</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Trend Following</h3>
+            <p>Capture major market moves</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">😌</div>
+            <h3>Less Stress</h3>
+            <p>No need for constant monitoring</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Higher Returns</h3>
+            <p>Larger profit targets per trade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Markets -->
+      <section class="section">
+        <h2>Best Markets for Swing Trading</h2>
+        <div class="markets-grid">
+          <div class="market-card">
+            <h3>Major Forex Pairs</h3>
+            <p>EUR/USD, GBP/USD, USD/JPY</p>
+            <span class="rating">★★★★★</span>
+          </div>
+          <div class="market-card">
+            <h3>Indices</h3>
+            <p>S&P 500, NASDAQ, FTSE</p>
+            <span class="rating">★★★★★</span>
+          </div>
+          <div class="market-card">
+            <h3>Commodities</h3>
+            <p>Gold, Silver, Oil</p>
+            <span class="rating">★★★★☆</span>
+          </div>
+          <div class="market-card">
+            <h3>Crypto</h3>
+            <p>Bitcoin, Ethereum</p>
+            <span class="rating">★★★★☆</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Swing Trading Strategies -->
+      <section class="section">
+        <h2>Popular Swing Trading Strategies</h2>
+        
+        <div class="strategy-block">
+          <h3>1. Trend Pullback</h3>
+          <p>Buy dips in uptrends, sell rallies in downtrends using Fibonacci retracements (38.2%, 50%, 61.8%).</p>
+          <div class="tip">💡 Wait for confirmation candle before entering</div>
+        </div>
+
+        <div class="strategy-block">
+          <h3>2. Breakout Trading</h3>
+          <p>Enter when price breaks above resistance or below support with high volume.</p>
+        </div>
+
+        <div class="strategy-block">
+          <h3>3. Moving Average Crossover</h3>
+          <p>Use 50 and 200 EMA on daily charts for trend direction.</p>
+          <div class="code-simple">Golden Cross (50 above 200) = Buy signal</div>
+        </div>
+
+        <div class="strategy-block">
+          <h3>4. Support/Resistance Swings</h3>
+          <p>Trade bounces off key levels on daily and 4H charts.</p>
+        </div>
+      </section>
+
+      <!-- Indicators -->
+      <section class="section">
+        <h2>Best Indicators for Swing Trading</h2>
+        <div class="indicators-grid">
+          <div class="indicator-card">
+            <h3>Moving Averages</h3>
+            <p>50, 100, 200 EMA for trend direction</p>
+          </div>
+          <div class="indicator-card">
+            <h3>RSI</h3>
+            <p>Identify overbought/oversold conditions</p>
+          </div>
+          <div class="indicator-card">
+            <h3>MACD</h3>
+            <p>Confirm trend strength and momentum</p>
+          </div>
+          <div class="indicator-card">
+            <h3>Fibonacci</h3>
+            <p>Find pullback levels</p>
+          </div>
+          <div class="indicator-card">
+            <h3>Bollinger Bands</h3>
+            <p>Identify volatility and reversals</p>
+          </div>
+          <div class="indicator-card">
+            <h3>Ichimoku Cloud</h3>
+            <p>Complete trend analysis system</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Risk Management -->
+      <section class="section">
+        <h2>Swing Trading Risk Management</h2>
+        <div class="risk-grid">
+          <div class="risk-card">
+            <div class="risk-number">2:1</div>
+            <p>Minimum Reward:Risk Ratio</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">20-50 pips</div>
+            <p>Stop Loss (depends on timeframe)</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">1-2%</div>
+            <p>Risk per trade</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">ATR</div>
+            <p>Use ATR for dynamic stops</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Routine -->
+      <section class="section">
+        <h2>Sample Daily Routine</h2>
+        <div class="routine">
+          <div class="routine-item">
+            <span class="time">🕐 30 min</span>
+            <span>Analyze daily charts and identify key levels</span>
+          </div>
+          <div class="routine-item">
+            <span class="time">🕐 15 min</span>
+            <span>Check 4H charts for entry signals</span>
+          </div>
+          <div class="routine-item">
+            <span class="time">🕐 15 min</span>
+            <span>Set pending orders and alerts</span>
+          </div>
+          <div class="routine-item">
+            <span class="time">🕐 1-2 hours</span>
+            <span>Evening review and journaling</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pros & Cons -->
+      <section class="section">
+        <h2>Pros & Cons of Swing Trading</h2>
+        <div class="pros-cons">
+          <div class="pros">
+            <h3>✅ Pros</h3>
+            <ul>
+              <li>Less time-intensive than day trading</li>
+              <li>Lower transaction costs</li>
+              <li>Less stress and screen time</li>
+              <li>Works well with day jobs</li>
+              <li>Larger profit targets</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h3>❌ Cons</h3>
+            <ul>
+              <li>Overnight and weekend risk</li>
+              <li>Swap fees for holding positions</li>
+              <li>Gap risk (price jumps overnight)</li>
+              <li>Requires patience</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Learn More?</h2>
+        <div class="next-links">
+          <a href="/Learn/Strategies/PositionTrading" class="next-link">
+            <span>Position Trading →</span>
+            <small>Long-term fundamental approach</small>
+          </a>
+          <a href="/Learn/Strategies/Scalping" class="next-link">
+            <span>Scalping →</span>
+            <small>Fast-paced short-term trades</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  
+</Layout>

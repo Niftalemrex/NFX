@@ -1,0 +1,231 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './EconomicCalendar.css';
+---
+
+<Layout title="Economic Calendar - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Economic Calendar</h1>
+        <p class="subtitle">Never miss a high-impact market-moving event</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Why Use an Economic Calendar?</h2>
+        <p>
+          Economic calendars track important economic releases, central bank meetings, and political events 
+          that can cause significant market volatility. Planning your trading around these events helps you 
+          avoid unexpected losses and capitalize on opportunities.
+        </p>
+      </section>
+
+      <!-- Impact Levels -->
+      <section class="section">
+        <h2>Understanding Event Impact</h2>
+        <div class="impact-guide">
+          <div class="impact-item high">
+            <span class="impact-dot">🔴</span>
+            <div>
+              <strong>High Impact</strong>
+              <p>Expect significant volatility. Consider staying out or using wider stops.</p>
+            </div>
+          </div>
+          <div class="impact-item medium">
+            <span class="impact-dot">🟡</span>
+            <div>
+              <strong>Medium Impact</strong>
+              <p>Moderate volatility. Trading opportunities with proper risk management.</p>
+            </div>
+          </div>
+          <div class="impact-item low">
+            <span class="impact-dot">🟢</span>
+            <div>
+              <strong>Low Impact</strong>
+              <p>Minor volatility. Usually safe to trade normally.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Major Events by Currency -->
+      <section class="section">
+        <h2>Major Events by Currency</h2>
+        
+        <div class="currency-events">
+          <div class="currency-card">
+            <h3>🇺🇸 US Dollar (USD)</h3>
+            <ul>
+              <li>🔴 FOMC Interest Rate Decision</li>
+              <li>🔴 Non-Farm Payrolls (NFP)</li>
+              <li>🔴 CPI Inflation Data</li>
+              <li>🟡 GDP (Quarterly)</li>
+              <li>🟡 Retail Sales</li>
+              <li>🟡 Unemployment Claims</li>
+            </ul>
+          </div>
+          
+          <div class="currency-card">
+            <h3>🇪🇺 Euro (EUR)</h3>
+            <ul>
+              <li>🔴 ECB Interest Rate Decision</li>
+              <li>🔴 German CPI</li>
+              <li>🟡 GDP (Quarterly)</li>
+              <li>🟡 Employment Data</li>
+              <li>🟡 Manufacturing PMI</li>
+            </ul>
+          </div>
+          
+          <div class="currency-card">
+            <h3>🇬🇧 British Pound (GBP)</h3>
+            <ul>
+              <li>🔴 BOE Interest Rate Decision</li>
+              <li>🔴 CPI Inflation</li>
+              <li>🟡 GDP (Monthly/Quarterly)</li>
+              <li>🟡 Employment Report</li>
+              <li>🟡 Retail Sales</li>
+            </ul>
+          </div>
+          
+          <div class="currency-card">
+            <h3>🇯🇵 Japanese Yen (JPY)</h3>
+            <ul>
+              <li>🔴 BOJ Interest Rate Decision</li>
+              <li>🔴 Tokyo CPI</li>
+              <li>🟡 GDP (Quarterly)</li>
+              <li>🟡 Tankan Manufacturing</li>
+              <li>🟡 Trade Balance</li>
+            </ul>
+          </div>
+          
+          <div class="currency-card">
+            <h3>🇦🇺 Australian Dollar (AUD)</h3>
+            <ul>
+              <li>🔴 RBA Interest Rate Decision</li>
+              <li>🔴 Employment Change</li>
+              <li>🟡 GDP (Quarterly)</li>
+              <li>🟡 CPI Inflation</li>
+              <li>🟡 Trade Balance</li>
+            </ul>
+          </div>
+          
+          <div class="currency-card">
+            <h3>🇨🇦 Canadian Dollar (CAD)</h3>
+            <ul>
+              <li>🔴 BOC Interest Rate Decision</li>
+              <li>🔴 Employment Report</li>
+              <li>🟡 GDP (Monthly)</li>
+              <li>🟡 CPI Inflation</li>
+              <li>🟡 Retail Sales</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weekly Trading Schedule -->
+      <section class="section">
+        <h2>Typical Weekly Event Schedule</h2>
+        <div class="weekly-schedule">
+          <div class="day">
+            <h3>Monday</h3>
+            <p>Quietest day - Low impact events typically</p>
+          </div>
+          <div class="day">
+            <h3>Tuesday</h3>
+            <p>US data begins (Retail Sales, Manufacturing)</p>
+          </div>
+          <div class="day">
+            <h3>Wednesday</h3>
+            <p>Busiest day - CPI, FOMC, Central Bank meetings</p>
+          </div>
+          <div class="day">
+            <h3>Thursday</h3>
+            <p>GDP, Employment data, ECB events</p>
+          </div>
+          <div class="day">
+            <h3>Friday</h3>
+            <p>NFP (first Friday), Canadian Employment</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Trade Calendar Events -->
+      <section class="section">
+        <h2>Trading Strategies for News Events</h2>
+        
+        <div class="strategy-card">
+          <h3>Strategy 1: Stay Out</h3>
+          <p>Close positions 15-30 minutes before high-impact news. Re-enter after volatility settles.</p>
+          <span class="strategy-type">Best for: Conservative traders</span>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Strategy 2: Straddle Strategy</h3>
+          <p>Place buy and sell stop orders 10-20 pips above/below current price. One order gets triggered.</p>
+          <span class="strategy-type">Best for: Breakout traders</span>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Strategy 3: Fade the Spike</h3>
+          <p>Wait for initial spike, then trade the reversal when overreaction occurs.</p>
+          <span class="strategy-type">Best for: Experienced traders</span>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Strategy 4: Pre-News Positioning</h3>
+          <p>Enter based on expectations before news, exit immediately after.</p>
+          <span class="strategy-type">Best for: High-risk tolerance</span>
+        </div>
+      </section>
+
+      <!-- Important Tips -->
+      <section class="section">
+        <h2>Economic Calendar Tips</h2>
+        <div class="tips-grid">
+          <div class="tip-box">
+            <h3>📊 Know the Forecast</h3>
+            <p>Actual vs forecast deviation drives volatility. Bigger difference = bigger move.</p>
+          </div>
+          <div class="tip-box">
+            <h3>📈 Watch Revisions</h3>
+            <p>Previous data revisions can be as important as current release.</p>
+          </div>
+          <div class="tip-box">
+            <h3>⏰ Be Ready Early</h3>
+            <p>Volatility often starts 5-10 minutes before release time.</p>
+          </div>
+          <div class="tip-box">
+            <h3>🎯 Focus on Your Pairs</h3>
+            <p>Don't trade every event - focus on pairs you know.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Explore More Tools & Resources</h2>
+        <div class="next-links">
+          <a href="/ToolsResources/MarketHeatmap" class="next-link">
+            <span>Market Heatmap →</span>
+            <small>Visual currency strength</small>
+          </a>
+          <a href="/ToolsResources/TradingCalculator" class="next-link">
+            <span>Trading Calculator →</span>
+            <small>Pip, margin, risk calculator</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

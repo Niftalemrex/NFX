@@ -1,0 +1,99 @@
+.servicesSection {
+    background: linear-gradient(135deg, #0a0c12 0%, #0f172a 100%);
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Subtle background glow (consistent with other pages) */
+  .servicesSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 40%, rgba(0, 114, 255, 0.08), transparent);
+    pointer-events: none;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Glassmorphic card */
+  .card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 32px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 114, 255, 0.5);
+    box-shadow: 0 25px 35px -15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.05);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff, #a0c0ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .servicesSection {
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      gap: 1.5rem;
+    }
+    .card {
+      padding: 1.5rem;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+    }
+    .icon {
+      width: 60px;
+      height: 60px;
+      font-size: 2.5rem;
+    }
+  }

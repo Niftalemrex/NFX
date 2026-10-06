@@ -1,0 +1,214 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './Brokers.css';
+---
+
+<Layout title="Forex Brokers - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Forex Brokers</h1>
+        <p class="subtitle">Find the best broker for your trading style and needs</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Choosing the Right Broker</h2>
+        <p>
+          Your broker is your gateway to the forex market. Choosing the right one is crucial for your trading success. 
+          Here's what you need to know to make an informed decision.
+        </p>
+        
+        <div class="checklist">
+          <div class="check-item">✓ Regulated by top-tier authorities</div>
+          <div class="check-item">✓ Competitive spreads and commissions</div>
+          <div class="check-item">✓ Reliable trading platform</div>
+          <div class="check-item">✓ Fast execution and low slippage</div>
+          <div class="check-item">✓ Good customer support</div>
+        </div>
+      </section>
+
+      <!-- Broker Types -->
+      <section class="section">
+        <h2>Types of Forex Brokers</h2>
+        <div class="broker-types">
+          <div class="type-card">
+            <h3>🏛️ Market Maker (DD)</h3>
+            <p>Creates their own market, may trade against clients</p>
+            <span class="pros">Pros: Fixed spreads, no commission</span>
+            <span class="cons">Cons: Conflict of interest</span>
+          </div>
+          <div class="type-card">
+            <h3>🔄 ECN Broker</h3>
+            <p>Direct access to interbank market, no dealing desk</p>
+            <span class="pros">Pros: Tight spreads, transparent pricing</span>
+            <span class="cons">Cons: Commission fees</span>
+          </div>
+          <div class="type-card">
+            <h3>⚡ STP Broker</h3>
+            <p>Straight Through Processing to liquidity providers</p>
+            <span class="pros">Pros: No re-quotes, fast execution</span>
+            <span class="cons">Cons: Variable spreads</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Regulation -->
+      <section class="section">
+        <h2>Understanding Regulation</h2>
+        <p>
+          Regulation protects traders by ensuring brokers meet capital requirements, segregate client funds, 
+          and follow fair trading practices.
+        </p>
+        
+        <div class="regulators">
+          <div class="regulator-card">
+            <h3>Top-Tier Regulators</h3>
+            <ul>
+              <li>🇺🇸 CFTC/NFA (USA)</li>
+              <li>🇬🇧 FCA (UK)</li>
+              <li>🇦🇺 ASIC (Australia)</li>
+              <li>🇨🇾 CySEC (Cyprus - EU)</li>
+              <li>🇦🇪 DFSA/ADGM (Dubai)</li>
+            </ul>
+          </div>
+          <div class="regulator-card">
+            <h3>Offshore Regulators</h3>
+            <ul>
+              <li>🇧🇸 SCB (Bahamas)</li>
+              <li>🇰🇾 CIMA (Cayman Islands)</li>
+              <li>🇻🇬 FSC (BVI)</li>
+              <li>🇸🇨 FSA (Seychelles)</li>
+            </ul>
+            <p class="note">Note: Offer less protection but higher leverage</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Account Types -->
+      <section class="section">
+        <h2>Account Types Comparison</h2>
+        <div class="account-table">
+          <div class="table-header">
+            <span>Feature</span>
+            <span>Standard</span>
+            <span>Mini/Micro</span>
+            <span>ECN/RAW</span>
+            <span>Islamic</span>
+          </div>
+          <div class="table-row">
+            <span>Min Deposit</span>
+            <span>$100-500</span>
+            <span>$10-50</span>
+            <span>$500-1000+</span>
+            <span>Varies</span>
+          </div>
+          <div class="table-row">
+            <span>Spreads</span>
+            <span>1-2 pips</span>
+            <span>1-3 pips</span>
+            <span>0-0.5 pips</span>
+            <span>Same as standard</span>
+          </div>
+          <div class="table-row">
+            <span>Commission</span>
+            <span>None</span>
+            <span>None</span>
+            <span>$3-7 per lot</span>
+            <span>None</span>
+          </div>
+          <div class="table-row">
+            <span>Leverage</span>
+            <span>1:30 - 1:500</span>
+            <span>1:30 - 1:1000</span>
+            <span>1:30 - 1:100</span>
+            <span>1:30 - 1:500</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- What to Look For -->
+      <section class="section">
+        <h2>Key Factors to Consider</h2>
+        <div class="factors-grid">
+          <div class="factor-card">
+            <h3>💰 Spreads & Commissions</h3>
+            <p>Lower is better, but check for hidden fees</p>
+          </div>
+          <div class="factor-card">
+            <h3>⚡ Execution Speed</h3>
+            <p>Fast execution reduces slippage</p>
+          </div>
+          <div class="factor-card">
+            <h3>📱 Trading Platforms</h3>
+            <p>MT4, MT5, cTrader, or proprietary</p>
+          </div>
+          <div class="factor-card">
+            <h3>🏦 Deposit/Withdrawal</h3>
+            <p>Check fees, methods, and processing time</p>
+          </div>
+          <div class="factor-card">
+            <h3>📞 Customer Support</h3>
+            <p>24/5 or 24/7 availability</p>
+          </div>
+          <div class="factor-card">
+            <h3>📚 Educational Resources</h3>
+            <p>Free training, webinars, market analysis</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Red Flags -->
+      <section class="section">
+        <h2>Warning Signs - Avoid These Brokers</h2>
+        <ul class="red-flags">
+          <li>❌ Unrealistic promises (guaranteed profits)</li>
+          <li>❌ No regulation or fake regulation claims</li>
+          <li>❌ Difficulty withdrawing funds</li>
+          <li>❌ Negative online reviews about withdrawals</li>
+          <li>❌ Excessive slippage or re-quotes</li>
+          <li>❌ Bonus conditions that trap your money</li>
+        </ul>
+      </section>
+
+      <!-- Demo Account Importance -->
+      <section class="section">
+        <h2>Always Test with a Demo First</h2>
+        <div class="demo-box">
+          <p>Before depositing real money, test the broker with a demo account for at least 2-4 weeks:</p>
+          <ul>
+            <li>Test execution speed and slippage</li>
+            <li>Check customer support response time</li>
+            <li>Practice deposit/withdrawal process with small amounts</li>
+            <li>Verify spreads during your trading hours</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Explore More Tools & Resources</h2>
+        <div class="next-links">
+          <a href="/ToolsResources/TradingCalculator" class="next-link">
+            <span>Trading Calculator →</span>
+            <small>Pip, margin, risk calculator</small>
+          </a>
+          <a href="/ToolsResources/EconomicCalendar" class="next-link">
+            <span>Economic Calendar →</span>
+            <small>Never miss a high-impact event</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  
+</Layout>

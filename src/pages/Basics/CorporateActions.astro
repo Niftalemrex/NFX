@@ -1,0 +1,286 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './CorporateActions.css';
+---
+
+<Layout title="Corporate Actions - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Corporate Actions</h1>
+        <p class="subtitle">Dividends, stock splits, buybacks - Understanding company events</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What are Corporate Actions?</h2>
+        <p>
+          Corporate actions are events initiated by a publicly traded company that affect its stock price, 
+          outstanding shares, or shareholder value. Understanding these events helps traders anticipate 
+          price movements and adjust their strategies accordingly.
+        </p>
+      </section>
+
+      <!-- Dividends -->
+      <section class="section">
+        <h2>Dividends</h2>
+        <p>
+          Dividends are payments made by a company to its shareholders from its profits. They can be cash payments 
+          or additional shares (stock dividends).
+        </p>
+        
+        <div class="action-card">
+          <h3>📊 Key Dates for Dividends</h3>
+          <div class="dates">
+            <div class="date-item">
+              <strong>Announcement Date:</strong>
+              <span>Company announces dividend amount and dates</span>
+            </div>
+            <div class="date-item">
+              <strong>Ex-Dividend Date:</strong>
+              <span>Cut-off date - Buy before this to receive dividend</span>
+            </div>
+            <div class="date-item">
+              <strong>Record Date:</strong>
+              <span>Company records who receives dividend</span>
+            </div>
+            <div class="date-item">
+              <strong>Payment Date:</strong>
+              <span>When dividend is paid to shareholders</span>
+            </div>
+          </div>
+          
+          <div class="trading-impact">
+            <h4>Impact on Stock Price:</h4>
+            <ul>
+              <li>Stock price typically rises leading to ex-dividend date</li>
+              <li>Price drops by approximately dividend amount on ex-dividend date</li>
+              <li>Higher dividends → More attractive to investors</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stock Splits -->
+      <section class="section">
+        <h2>Stock Splits</h2>
+        <p>
+          A stock split increases the number of shares while reducing the price per share proportionally. 
+          The company's total market value remains unchanged.
+        </p>
+        
+        <div class="action-card">
+          <div class="split-types">
+            <div class="split-type">
+              <h3>Forward Split (Common)</h3>
+              <p>Example: 2-for-1 split</p>
+              <ul>
+                <li>Share price halves</li>
+                <li>Number of shares doubles</li>
+                <li>Total value remains same</li>
+              </ul>
+            </div>
+            <div class="split-type">
+              <h3>Reverse Split</h3>
+              <p>Example: 1-for-10 split</p>
+              <ul>
+                <li>Share price multiplies by 10</li>
+                <li>Number of shares reduces by 90%</li>
+                <li>Often signals struggling company</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="trading-impact">
+            <h4>Trading Implications:</h4>
+            <ul>
+              <li>Forward splits often create buying interest (more affordable shares)</li>
+              <li>Reverse splits typically negative for stock price</li>
+              <li>Volatility increases around split dates</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Share Buybacks -->
+      <section class="section">
+        <h2>Share Buybacks (Repurchases)</h2>
+        <p>
+          A company buys its own shares from the open market, reducing the number of outstanding shares 
+          and increasing earnings per share (EPS).
+        </p>
+        
+        <div class="action-card">
+          <h3>Why Companies Buy Back Shares:</h3>
+          <ul>
+            <li>📈 Increases EPS (earnings per share)</li>
+            <li>💰 Signals undervalued stock</li>
+            <li>🏦 Returns capital to shareholders tax-efficiently</li>
+            <li>⚡ Offsets dilution from employee stock options</li>
+          </ul>
+          
+          <div class="trading-impact">
+            <h4>Impact on Stock Price:</h4>
+            <ul>
+              <li>Generally bullish - indicates management confidence</li>
+              <li>Creates demand for shares</li>
+              <li>Often leads to sustained price appreciation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mergers & Acquisitions -->
+      <section class="section">
+        <h2>Mergers & Acquisitions (M&A)</h2>
+        <p>
+          When one company buys another or two companies combine to form a new entity.
+        </p>
+        
+        <div class="action-card">
+          <div class="ma-types">
+            <div class="ma-type">
+              <h3>Acquisition (Takeover)</h3>
+              <p>Company A buys Company B</p>
+              <ul>
+                <li>Target stock price rises (premium paid)</li>
+                <li>Acquirer stock may drop</li>
+              </ul>
+            </div>
+            <div class="ma-type">
+              <h3>Merger</h3>
+              <p>Two companies combine equally</p>
+              <ul>
+                <li>New entity created</li>
+                <li>Shares converted to new company shares</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="trading-impact">
+            <h4>Arbitrage Opportunity:</h4>
+            <p>Traders buy target stock at discount to acquisition price, profiting from the spread until deal closes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rights Issues -->
+      <section class="section">
+        <h2>Rights Issues</h2>
+        <p>
+          A company offers existing shareholders the right to buy additional shares at a discount before 
+          offering them to the public.
+        </p>
+        
+        <div class="action-card">
+          <div class="trading-impact">
+            <h4>Impact:</h4>
+            <ul>
+              <li>Generally negative for stock price (dilution)</li>
+              <li>Discounted rights create value for participating shareholders</li>
+              <li>Non-participating shareholders get diluted</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bonus Issues -->
+      <section class="section">
+        <h2>Bonus Issues (Scrip Dividends)</h2>
+        <p>
+          Company issues additional free shares to existing shareholders instead of cash dividends.
+        </p>
+        
+        <div class="action-card">
+          <div class="trading-impact">
+            <h4>Effect:</h4>
+            <ul>
+              <li>Share price adjusts down proportionally</li>
+              <li>Shareholder total value unchanged</li>
+              <li>Improves liquidity (more shares in market)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Trade Corporate Actions -->
+      <section class="section">
+        <h2>Trading Strategies for Corporate Actions</h2>
+        
+        <div class="strategy-card">
+          <h3>Dividend Capture Strategy</h3>
+          <p>Buy before ex-dividend date, sell after price drop for dividend + potential profit</p>
+          <span class="risk">Risk: Price may drop more than dividend amount</span>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Split Run-up Strategy</h3>
+          <p>Buy before split announcement or effective date, sell into the rally</p>
+          <span class="reward">Reward: Historical tendency for pre-split rallies</span>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Merger Arbitrage</h3>
+          <p>Buy target stock at discount to acquisition price, hold until deal closes</p>
+          <span class="risk">Risk: Deal may fail, causing losses</span>
+        </div>
+      </section>
+
+      <!-- Calendar of Events -->
+      <section class="section">
+        <h2>Corporate Action Calendar</h2>
+        <div class="calendar-grid">
+          <div class="calendar-item">
+            <span class="month">January</span>
+            <p>Q4 earnings & dividend announcements</p>
+          </div>
+          <div class="calendar-item">
+            <span class="month">March</span>
+            <p>Annual meetings, Q1 announcements</p>
+          </div>
+          <div class="calendar-item">
+            <span class="month">April</span>
+            <p>Q1 earnings reports</p>
+          </div>
+          <div class="calendar-item">
+            <span class="month">July</span>
+            <p>Q2 earnings, mid-year dividends</p>
+          </div>
+          <div class="calendar-item">
+            <span class="month">October</span>
+            <p>Q3 earnings reports</p>
+          </div>
+          <div class="calendar-item">
+            <span class="month">December</span>
+            <p>Year-end dividends, tax planning</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Basics</h2>
+        <div class="next-links">
+          <a href="/Basics/ForexGlossary" class="next-link">
+            <span>Forex Glossary →</span>
+            <small>A-Z of trading terms</small>
+          </a>
+          <a href="/Basics/TradingPsychology" class="next-link">
+            <span>Trading Psychology →</span>
+            <small>Master your emotions</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

@@ -1,0 +1,205 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './AutomatedTrading.css';
+---
+
+<Layout title="Automated Trading - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Automated Trading</h1>
+        <p class="subtitle">Expert Advisors (EAs) and trading bots explained</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Automated Trading?</h2>
+        <p>
+          Automated trading uses computer programs (Expert Advisors or EAs) to automatically execute trades based on 
+          predefined rules. This removes human emotion from trading and allows for 24/5 market monitoring.
+        </p>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>🎯 Emotion-Free</h3>
+            <p>No fear or greed affecting decisions</p>
+          </div>
+          <div class="benefit-card">
+            <h3>⏰ 24/5 Trading</h3>
+            <p>Never miss a trading opportunity</p>
+          </div>
+          <div class="benefit-card">
+            <h3>📊 Backtesting</h3>
+            <p>Test strategies on historical data</p>
+          </div>
+          <div class="benefit-card">
+            <h3>⚡ Fast Execution</h3>
+            <p>Instant trade execution</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How EAs Work -->
+      <section class="section">
+        <h2>How Expert Advisors Work</h2>
+        <div class="workflow">
+          <div class="workflow-step">
+            <div class="workflow-icon">📝</div>
+            <h3>Define Rules</h3>
+            <p>Set entry/exit conditions, risk management rules</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">💻</div>
+            <h3>Code Strategy</h3>
+            <p>Write in MQL4/MQL5 or use visual builder</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">🧪</div>
+            <h3>Backtest</h3>
+            <p>Test on historical data</p>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <div class="workflow-icon">💰</div>
+            <h3>Deploy</h3>
+            <p>Run on live or demo account</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Types of EAs -->
+      <section class="section">
+        <h2>Types of Expert Advisors</h2>
+        <div class="ea-types">
+          <div class="ea-card">
+            <h3>📈 Trend Followers</h3>
+            <p>Buy when price breaks above moving average, sell when below</p>
+          </div>
+          <div class="ea-card">
+            <h3>🔄 Scalpers</h3>
+            <p>Make many small profits on minor price movements</p>
+          </div>
+          <div class="ea-card">
+            <h3>📊 Grid Traders</h3>
+            <p>Place buy/sell orders at set intervals</p>
+          </div>
+          <div class="ea-card">
+            <h3>🕯️ News Traders</h3>
+            <p>Trade based on economic calendar events</p>
+          </div>
+          <div class="ea-card">
+            <h3>⚖️ Arbitrage</h3>
+            <p>Profit from price differences between brokers</p>
+          </div>
+          <div class="ea-card">
+            <h3>🎲 Martingale</h3>
+            <p>Double position size after losses (high risk)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Getting Started -->
+      <section class="section">
+        <h2>Getting Started with EAs</h2>
+        <div class="steps-container">
+          <div class="step-item">
+            <span class="step-num">1</span>
+            <div>
+              <h3>Download an EA</h3>
+              <p>Get free EAs from MQL5 Marketplace or create your own</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">2</span>
+            <div>
+              <h3>Install in MetaTrader</h3>
+              <p>Copy .ex4 files to Experts folder in MT4/MT5 directory</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <div>
+              <h3>Enable Auto-Trading</h3>
+              <p>Click the "AutoTrading" button in MT4/MT5 toolbar</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <div>
+              <h3>Attach to Chart</h3>
+              <p>Drag EA onto chart and configure settings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Backtesting -->
+      <section class="section">
+        <h2>Backtesting Your Strategy</h2>
+        <p>
+          Always backtest your EA before going live. MetaTrader's Strategy Tester lets you test on years of historical data.
+        </p>
+        <div class="backtest-tips">
+          <h3>Backtesting Best Practices:</h3>
+          <ul>
+            <li>Use at least 2-3 years of data</li>
+            <li>Test on multiple currency pairs</li>
+            <li>Use 90% modeling quality or higher</li>
+            <li>Forward test on demo for 1-3 months</li>
+            <li>Never trust optimized results without out-of-sample testing</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Risks & Warnings -->
+      <section class="section">
+        <h2>Important Risks & Warnings</h2>
+        <div class="warning-container">
+          <div class="warning-card">
+            <h3>⚠️ Past Performance</h3>
+            <p>Backtest results don't guarantee future profits</p>
+          </div>
+          <div class="warning-card">
+            <h3>⚠️ Over-Optimization</h3>
+            <p>Curve-fitted EAs fail in live markets</p>
+          </div>
+          <div class="warning-card">
+            <h3>⚠️ Broker Issues</h3>
+            <p>Slippage and requotes affect EA performance</p>
+          </div>
+          <div class="warning-card">
+            <h3>⚠️ Technical Failures</h3>
+            <p>Internet/VPS outages can stop your EA</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Start Automated Trading?</h2>
+        <div class="next-links">
+          <a href="/Learn/PlatformTools/MetaTrader" class="next-link">
+            <span>MetaTrader Guide →</span>
+            <small>Master the platform</small>
+          </a>
+          <a href="/Learn/Strategies/Scalping" class="next-link">
+            <span>Trading Strategies →</span>
+            <small>Learn different approaches</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+ 
+</Layout>

@@ -1,0 +1,231 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './ICTConcepts.css';
+---
+
+<Layout title="ICT Concepts - NFX Learning">
+
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>ICT Concepts</h1>
+        <p class="subtitle">Inner Circle Trader methodology - Understanding smart money manipulation</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is ICT Trading?</h2>
+        <p>
+          ICT (Inner Circle Trader) methodology, developed by Michael Huddleston, focuses on understanding how 
+          institutional traders (smart money) manipulate the markets. It reveals the hidden patterns and algorithms 
+          that drive price movements.
+        </p>
+        
+        <div class="quote-box">
+          <p>"The markets are engineered, not random. Learn to think like the institutions."</p>
+          <span>- Michael Huddleston (ICT)</span>
+        </div>
+      </section>
+
+      <!-- Key Concepts -->
+      <section class="section">
+        <h2>Core ICT Concepts</h2>
+        <div class="concepts-grid">
+          <div class="concept-card">
+            <h3>🎯 Liquidity</h3>
+            <p>Banks and institutions hunt for liquidity (stop losses) before moving price in their intended direction.</p>
+          </div>
+          <div class="concept-card">
+            <h3>📊 Market Structure</h3>
+            <p>Understanding Break of Structure (BOS) and Change of Character (CHoCH) for trend direction.</p>
+          </div>
+          <div class="concept-card">
+            <h3>⚖️ Fair Value Gaps</h3>
+            <p>Imbalance areas where price is likely to return to fill the gap before continuing.</p>
+          </div>
+          <div class="concept-card">
+            <h3>🎯 Order Blocks</h3>
+            <p>Institutional order zones where smart money entered their positions.</p>
+          </div>
+          <div class="concept-card">
+            <h3>🕐 Kill Zones</h3>
+            <p>Specific times when institutional algorithms are most active (London Open, New York Open).</p>
+          </div>
+          <div class="concept-card">
+            <h3>🔄 Liquidity Sweep</h3>
+            <p>Price moves to take out stops before reversing in the opposite direction.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Market Structure -->
+      <section class="section">
+        <h2>Market Structure Analysis</h2>
+        <div class="structure-box">
+          <h3>Bullish Market Structure:</h3>
+          <ul>
+            <li>Higher Highs (HH) + Higher Lows (HL) = Uptrend</li>
+            <li>Break of Structure (BOS) confirms trend</li>
+            <li>Change of Character (CHoCH) signals potential reversal</li>
+          </ul>
+          
+          <h3>Bearish Market Structure:</h3>
+          <ul>
+            <li>Lower Highs (LH) + Lower Lows (LL) = Downtrend</li>
+            <li>Break of Structure (BOS) confirms trend</li>
+            <li>Change of Character (CHoCH) signals potential reversal</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Order Blocks -->
+      <section class="section">
+        <h2>Understanding Order Blocks</h2>
+        <p>
+          Order blocks are the last candle before a strong impulsive move. They represent where institutions entered their positions.
+        </p>
+        <div class="order-block-types">
+          <div class="type-card">
+            <h3>Bullish Order Block</h3>
+            <p>Last down candle before a strong up move - look to buy here</p>
+          </div>
+          <div class="type-card">
+            <h3>Bearish Order Block</h3>
+            <p>Last up candle before a strong down move - look to sell here</p>
+          </div>
+          <div class="type-card">
+            <h3>Mitigated Order Block</h3>
+            <p>Price has already returned to this zone</p>
+          </div>
+          <div class="type-card">
+            <h3>Unmitigated Order Block</h3>
+            <p>Price hasn't returned yet - potential target</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fair Value Gaps -->
+      <section class="section">
+        <h2>Fair Value Gaps (FVG)</h2>
+        <p>
+          A Fair Value Gap occurs when there's an imbalance between buying and selling pressure, creating a gap 
+          where price is likely to return to fill the inefficiency.
+        </p>
+        <div class="fvg-box">
+          <h3>How to Identify FVG:</h3>
+          <ul>
+            <li>Look for 3 consecutive candles</li>
+            <li>The middle candle's wick doesn't overlap with the first and third candles</li>
+            <li>The gap between these candles is the Fair Value Gap</li>
+          </ul>
+          <div class="tip">💡 Price often returns to fill FVGs before continuing in the original direction</div>
+        </div>
+      </section>
+
+      <!-- Kill Zones -->
+      <section class="section">
+        <h2>Kill Zones (Best Trading Times)</h2>
+        <div class="killzones-grid">
+          <div class="killzone-card">
+            <h3>🕐 London Kill Zone</h3>
+            <p>2:00 AM - 5:00 AM EST</p>
+            <span>High volatility, London session open</span>
+          </div>
+          <div class="killzone-card">
+            <h3>🕐 New York Kill Zone</h3>
+            <p>7:00 AM - 10:00 AM EST</p>
+            <span>Best for forex and indices</span>
+          </div>
+          <div class="killzone-card">
+            <h3>🕐 London Close</h3>
+            <p>11:00 AM - 12:00 PM EST</p>
+            <span>End of London session</span>
+          </div>
+          <div class="killzone-card">
+            <h3>🕐 Silver Bullet</h3>
+            <p>Specific hourly windows with high probability setups</p>
+            <span>3-4 AM, 7-8 AM, 10-11 AM EST</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Liquidity Concepts -->
+      <section class="section">
+        <h2>Liquidity Concepts</h2>
+        <div class="liquidity-grid">
+          <div class="liquidity-card">
+            <h3>Buy Side Liquidity</h3>
+            <p>Stop losses above previous highs - targets for sell programs</p>
+          </div>
+          <div class="liquidity-card">
+            <h3>Sell Side Liquidity</h3>
+            <p>Stop losses below previous lows - targets for buy programs</p>
+          </div>
+          <div class="liquidity-card">
+            <h3>Trendline Liquidity</h3>
+            <p>Stops placed above/below trendlines</p>
+          </div>
+          <div class="liquidity-card">
+            <h3>Equal Highs/Lows</h3>
+            <p>Double tops/bottoms where liquidity is pooled</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trading Model -->
+      <section class="section">
+        <h2>Basic ICT Trading Model</h2>
+        <div class="trading-model">
+          <div class="model-step">
+            <span class="step-num">1</span>
+            <span>Identify market structure (HTF trend)</span>
+          </div>
+          <div class="model-step">
+            <span class="step-num">2</span>
+            <span>Find liquidity levels (previous highs/lows)</span>
+          </div>
+          <div class="model-step">
+            <span class="step-num">3</span>
+            <span>Wait for liquidity sweep</span>
+          </div>
+          <div class="model-step">
+            <span class="step-num">4</span>
+            <span>Look for displacement/order block</span>
+          </div>
+          <div class="model-step">
+            <span class="step-num">5</span>
+            <span>Enter on retracement to FVG/Order Block</span>
+          </div>
+          <div class="model-step">
+            <span class="step-num">6</span>
+            <span>Target next liquidity level</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Technical Analysis</h2>
+        <div class="next-links">
+          <a href="/TechnicalAnalysis/PriceAction" class="next-link">
+            <span>Price Action →</span>
+            <small>Naked chart trading</small>
+          </a>
+          <a href="/TechnicalAnalysis/SmartMoneyConcepts" class="next-link">
+            <span>Smart Money Concepts →</span>
+            <small>Follow the institutional flow</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

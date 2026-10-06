@@ -1,0 +1,178 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './HowtoTrade.css';
+---
+
+<Layout title="How to Trade Forex - NFX Learning">
+
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How to Trade Forex</h1>
+        <p class="subtitle">Step-by-step guide to placing your first trade</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Step 1 -->
+      <section class="section">
+        <h2>Step 1: Choose a Reliable Broker</h2>
+        <p>
+          Your broker is your gateway to the forex market. Look for brokers that are regulated by top-tier authorities 
+          (FCA, ASIC, CySEC, CFTC), offer competitive spreads, have reliable trading platforms, and provide good customer support.
+        </p>
+        <div class="tip-box">
+          <strong>💡 Tip:</strong> Start with a demo account to practice without risking real money.
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="section">
+        <h2>Step 2: Open and Fund Your Account</h2>
+        <p>
+          Once you've chosen a broker, complete the registration process, verify your identity, and make your first deposit. 
+          Most brokers accept various payment methods including bank transfers, credit cards, and e-wallets.
+        </p>
+        <div class="warning-box">
+          <strong>⚠️ Important:</strong> Only invest what you can afford to lose. Start with a small amount.
+        </div>
+      </section>
+
+      <!-- Step 3 -->
+      <section class="section">
+        <h2>Step 3: Learn the Platform</h2>
+        <p>
+          Most brokers offer MetaTrader 4 (MT4) or MetaTrader 5 (MT5). Take time to learn:
+        </p>
+        <ul class="checklist">
+          <li>How to place market orders</li>
+          <li>How to set stop loss and take profit</li>
+          <li>How to use charts and indicators</li>
+          <li>How to manage multiple positions</li>
+        </ul>
+      </section>
+
+      <!-- Step 4 -->
+      <section class="section">
+        <h2>Step 4: Analyze the Market</h2>
+        <p>
+          Before entering a trade, you need a reason. Use either:
+        </p>
+        <div class="two-columns">
+          <div class="card">
+            <h3>📊 Technical Analysis</h3>
+            <p>Study price charts, patterns, and indicators to predict future price movements.</p>
+          </div>
+          <div class="card">
+            <h3>🌍 Fundamental Analysis</h3>
+            <p>Analyze economic news, interest rates, and geopolitical events.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 5 -->
+      <section class="section">
+        <h2>Step 5: Place Your First Trade</h2>
+        <div class="trade-example">
+          <h3>Example Trade: Buying EUR/USD</h3>
+          <div class="trade-steps">
+            <div class="step">
+              <span class="step-number">1</span>
+              <span>Select EUR/USD pair</span>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <span>Choose "Buy" (if you expect price to rise)</span>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <span>Set your position size (e.g., 0.01 lot = $1 per pip)</span>
+            </div>
+            <div class="step">
+              <span class="step-number">4</span>
+              <span>Set Stop Loss (e.g., 20 pips below entry)</span>
+            </div>
+            <div class="step">
+              <span class="step-number">5</span>
+              <span>Set Take Profit (e.g., 40 pips above entry)</span>
+            </div>
+            <div class="step">
+              <span class="step-number">6</span>
+              <span>Click "Place Order"</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 6 -->
+      <section class="section">
+        <h2>Step 6: Manage Your Trade</h2>
+        <p>
+          Once your trade is open, monitor it but avoid overtrading. You can:
+        </p>
+        <ul>
+          <li>Move stop loss to breakeven once price moves in your favor</li>
+          <li>Take partial profits at key levels</li>
+          <li>Let winning trades run with trailing stop</li>
+        </ul>
+      </section>
+
+      <!-- Step 7 -->
+      <section class="section">
+        <h2>Step 7: Close Your Trade</h2>
+        <p>
+          Close your trade when:
+        </p>
+        <ul>
+          <li>Your take profit is hit (automatic)</li>
+          <li>Your stop loss is hit (automatic)</li>
+          <li>You manually close before market close</li>
+        </ul>
+        <div class="success-box">
+          <strong>✅ Success!</strong> Your profit/loss will be automatically calculated and added to your account balance.
+        </div>
+      </section>
+
+      <!-- Risk Management -->
+      <section class="section">
+        <h2>Essential Risk Management Rules</h2>
+        <div class="rules-grid">
+          <div class="rule-card">
+            <span class="rule-number">1%</span>
+            <p>Never risk more than 1-2% of your account on a single trade</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">2:1</span>
+            <p>Target at least 2:1 reward-to-risk ratio</p>
+          </div>
+          <div class="rule-card">
+            <span class="rule-number">Daily</span>
+            <p>Set a daily loss limit and stick to it</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Practice?</h2>
+        <div class="next-links">
+          <a href="/Learn/GettingStarted/TradingTerminology" class="next-link">
+            <span>Trading Terminology →</span>
+            <small>Essential terms every trader needs</small>
+          </a>
+          <a href="/Learn/PlatformTools/MetaTrader" class="next-link">
+            <span>MetaTrader Guide →</span>
+            <small>Master the platform</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+ 
+</Layout>

@@ -1,0 +1,318 @@
+/* CFDProducts.css */
+
+.page-container {
+    padding-top: 120px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff, #00c6ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
+  
+  .section {
+    margin-bottom: 4rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #00c6ff;
+    padding-left: 1rem;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 198, 255, 0.1);
+  }
+  
+  .stat-value {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .explanation-box {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .example {
+    background: rgba(0, 114, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .example h3 {
+    color: #00c6ff;
+    margin-bottom: 1rem;
+  }
+  
+  .example ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .example li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .markets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .market-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.5rem;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .market-card:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 198, 255, 0.1);
+  }
+  
+  .market-card h3 {
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .popular {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+  }
+  
+  .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .advantage-card {
+    display: flex;
+    gap: 1rem;
+    background: rgba(0, 198, 255, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    align-items: flex-start;
+  }
+  
+  .check {
+    font-size: 1.5rem;
+    color: #00ff66;
+  }
+  
+  .advantage-card h3 {
+    color: #00c6ff;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .advantage-card p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+  
+  .risks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .risk-card {
+    background: rgba(255, 100, 100, 0.1);
+    border-left: 4px solid #ff6666;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  
+  .risk-card h3 {
+    color: #ff6666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .costs-table {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 2rem;
+  }
+  
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .cost-row:last-child {
+    border-bottom: none;
+  }
+  
+  .cost-row span:first-child {
+    font-weight: bold;
+    color: #00c6ff;
+  }
+  
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .long-card, .short-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+  
+  .long-card h3 {
+    color: #00ff66;
+    margin-bottom: 1rem;
+  }
+  
+  .short-card h3 {
+    color: #ff6666;
+    margin-bottom: 1rem;
+  }
+  
+  .long-card ul, .short-card ul {
+    margin: 1rem 0 0;
+    padding-left: 1.5rem;
+  }
+  
+  .long-card li, .short-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .next-steps {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.1), rgba(0, 198, 255, 0.05));
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .next-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  
+  .next-link {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .next-link span {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .next-link small {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+  }
+  
+  .next-link:hover {
+    background: rgba(0, 198, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .content-wrapper {
+      padding: 2rem 1rem;
+    }
+    
+    .section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .comparison {
+      grid-template-columns: 1fr;
+    }
+    
+    .stats-grid, .markets-grid, .advantages-grid, .risks-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cost-row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }

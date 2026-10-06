@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.tsx';
+import styles from './About.module.css';
+---
+
+<BaseLayout
+  title="About NFX Forex"
+  description="Learn about NFX Forex, a regulated and trusted Forex service provider offering professional trading solutions."
+>
+  <!-- Hero Section (clean, no badge, custom buttons maybe) -->
+  <Hero
+    title="About NFX Forex"
+    subtitle="Providing trusted and regulated Forex trading solutions for traders worldwide."
+    ctaText="Open Account"
+    ctaLink="/open-account"
+    secondaryCtaText="Contact Us"
+    secondaryCtaLink="/contact"
+    showScrollIndicator={false}
+    client:load
+  />
+
+  <!-- About Content Section -->
+  <section class={styles.aboutSection}>
+    <div class={styles.container}>
+      <div class={styles.grid}>
+        <!-- Mission Card -->
+        <div class={styles.card}>
+          <div class={styles.icon}>🎯</div>
+          <h2>Our Mission</h2>
+          <p>
+            At NFX, our mission is to empower traders with professional tools,
+            educational resources, and real-time insights to trade confidently
+            in the Forex market.
+          </p>
+        </div>
+
+        <!-- Why Choose Us Card -->
+        <div class={styles.card}>
+          <div class={styles.icon}>⭐</div>
+          <h2>Why Choose Us?</h2>
+          <p>
+            We are a regulated Forex service provider, committed to transparency,
+            security, and client success. Our team of experts ensures every trader
+            receives the support and guidance they need to make informed decisions.
+          </p>
+        </div>
+
+        <!-- Vision Card -->
+        <div class={styles.card}>
+          <div class={styles.icon}>🌍</div>
+          <h2>Our Vision</h2>
+          <p>
+            To be the leading Forex trading platform trusted by traders globally,
+            delivering innovation, reliability, and unparalleled service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Optional extra section: stats or trust badge -->
+      <div class={styles.stats}>
+        <div class={styles.statItem}>
+          <span class={styles.statNumber}>10k+</span>
+          <span class={styles.statLabel}>Active Traders</span>
+        </div>
+        <div class={styles.statItem}>
+          <span class={styles.statNumber}>$50B+</span>
+          <span class={styles.statLabel}>Trading Volume</span>
+        </div>
+        <div class={styles.statItem}>
+          <span class={styles.statNumber}>24/7</span>
+          <span class={styles.statLabel}>Support</span>
+        </div>
+        <div class={styles.statItem}>
+          <span class={styles.statNumber}>Regulated</span>
+          <span class={styles.statLabel}>Trusted Broker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,465 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero";
+
+const heroTitle = "NFX – Your Forex Market Partner";
+const heroSubtitle = "Expert insights, reliable trading services, and educational resources for traders worldwide.";
+const badge = "";
+const ctaText = "Start trading";
+const secondaryCtaText = "Learn more";
+const showScrollIndicator = true;
+---
+
+<BaseLayout title="NFX Forex" description="Forex trading services, insights, and education.">
+  <Hero 
+    title={heroTitle}
+    subtitle={heroSubtitle}
+    badge={badge}
+    ctaText={ctaText}
+    secondaryCtaText={secondaryCtaText}
+    showScrollIndicator={showScrollIndicator}
+    aboutId="about"
+    servicesId="services"
+    contactId="contact"
+    client:load
+  />
+
+  <!-- About Section -->
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Us</span>
+        <h2>Your Trusted Forex Partner</h2>
+        <p class="section-subtitle">Learn why traders choose NFX for their trading journey</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-content">
+          <h3>Who We Are</h3>
+          <p>NFX is a leading provider of forex trading services, educational resources, and market insights. We're dedicated to helping traders of all levels succeed in the world's largest financial market.</p>
+          
+          <h3>Our Mission</h3>
+          <p>To empower traders with the knowledge, tools, and support they need to make informed trading decisions and achieve their financial goals.</p>
+          
+          <h3>Our Values</h3>
+          <ul class="values-list">
+            <li>🔹 Transparency in all our dealings</li>
+            <li>🔹 Education-first approach to trading</li>
+            <li>🔹 Innovation in trading technology</li>
+            <li>🔹 Client success is our success</li>
+          </ul>
+        </div>
+        
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Active Traders</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">$10B+</div>
+            <div class="stat-label">Monthly Volume</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Countries Served</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/5</div>
+            <div class="stat-label">Support Available</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section-services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Services</span>
+        <h2>Comprehensive Trading Solutions</h2>
+        <p class="section-subtitle">Everything you need to trade with confidence</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Market Analysis</h3>
+          <p>Daily market insights, technical analysis, and fundamental research from expert analysts.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">📚</div>
+          <h3>Educational Resources</h3>
+          <p>Comprehensive trading courses, webinars, and guides for traders at all levels.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Broker Selection</h3>
+          <p>Expert guidance in choosing the right broker for your trading style and needs.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3>Trading Tools</h3>
+          <p>Advanced calculators, heatmaps, and analysis tools to enhance your trading.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">💡</div>
+          <h3>Prop Firm Support</h3>
+          <p>Assistance with prop firm challenges and funded account management.</p>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Risk Management</h3>
+          <p>Professional risk management strategies to protect your capital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact Us</span>
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">We're here to help with any questions you may have</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div>
+              <h4>Email Us</h4>
+              <p>support@nfx.com</p>
+              <p>info@nfx.com</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 (555) 123-4567</p>
+              <p>Mon-Fri: 9:00 - 18:00 EST</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">💬</div>
+            <div>
+              <h4>Live Chat</h4>
+              <p>Available 24/5 during market hours</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Office</h4>
+              <p>123 Financial District</p>
+              <p>New York, NY 10005</p>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form" action="/api/contact" method="POST">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Select Subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="partnership">Partnership</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Shared Section Styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-badge {
+    display: inline-block;
+    background: rgba(0, 198, 255, 0.1);
+    color: #00c6ff;
+    padding: 0.25rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* About Section */
+  .section-about {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #0f0f1a 100%);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-content h3 {
+    color: #00c6ff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .about-content p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .values-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .values-list li {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 198, 255, 0.1);
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+  }
+
+  /* Services Section */
+  .section-services {
+    padding: 6rem 0;
+    background: #0a0a0a;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+
+  .service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 198, 255, 0.1);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card h3 {
+    color: #00c6ff;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-card p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .section-contact {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0f0f1a 0%, #0a0a0a 100%);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .info-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .info-icon {
+    font-size: 2rem;
+  }
+
+  .info-item h4 {
+    color: #00c6ff;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-item p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0.25rem 0;
+  }
+
+  .contact-form {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #00c6ff;
+    background: rgba(0, 198, 255, 0.1);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 60px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 114, 255, 0.4);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-grid,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .container {
+      padding: 0 1rem;
+    }
+
+    .section-about,
+    .section-services,
+    .section-contact {
+      padding: 4rem 0;
+    }
+  }
+</style>

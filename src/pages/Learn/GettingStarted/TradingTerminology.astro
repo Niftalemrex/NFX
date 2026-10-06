@@ -1,0 +1,157 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './TradingTerminology.css';
+---
+
+<Layout title="Trading Terminology - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Trading Terminology</h1>
+        <p class="subtitle">Essential terms every trader needs to know</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Forex Trading Glossary</h2>
+        <p>
+          Understanding the language of forex trading is crucial for success. Here's your complete guide to essential trading terms.
+        </p>
+      </section>
+
+      <!-- Terminology Grid -->
+      <section class="section">
+        <div class="terminology-grid">
+          <div class="term-item">
+            <h3>Pip</h3>
+            <p>The smallest price move in a currency pair. For most pairs, it's 0.0001. For JPY pairs, it's 0.01.</p>
+            <div class="example">Example: EUR/USD moves from 1.1050 to 1.1051 = 1 pip</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Spread</h3>
+            <p>The difference between the bid (sell) and ask (buy) price. This is how brokers make money.</p>
+            <div class="example">Example: Bid 1.1050 / Ask 1.1052 = 2 pip spread</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Leverage</h3>
+            <p>Using borrowed capital to increase potential returns. Common leverage: 1:50, 1:100, 1:500.</p>
+            <div class="example">Example: With 1:100 leverage, $1,000 controls $100,000</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Margin</h3>
+            <p>The amount required to open and maintain a leveraged position.</p>
+            <div class="example">Example: 1% margin = $1,000 required for $100,000 position</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Lot Size</h3>
+            <p>Standard lot = 100,000 units, Mini = 10,000 units, Micro = 1,000 units.</p>
+            <div class="example">Example: 1 standard lot of EUR/USD = $10 per pip</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Stop Loss</h3>
+            <p>An order to close a trade at a specific price to limit losses.</p>
+            <div class="example">Example: Buy at 1.1050, Stop Loss at 1.1030 = 20 pip risk</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Take Profit</h3>
+            <p>An order to close a trade at a specific price to lock in profits.</p>
+            <div class="example">Example: Buy at 1.1050, Take Profit at 1.1090 = 40 pip profit</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Bid/Ask</h3>
+            <p>Bid is the price you sell at. Ask is the price you buy at.</p>
+            <div class="example">Example: EUR/USD 1.1050/1.1052 (Bid/Ask)</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Long/Short</h3>
+            <p>Long = Buy (expect price to rise). Short = Sell (expect price to fall).</p>
+            <div class="example">Example: Going long EUR/USD = Buying Euros</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Liquidity</h3>
+            <p>How easily an asset can be bought or sold without affecting its price.</p>
+            <div class="example">Example: Major pairs have high liquidity</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Volatility</h3>
+            <p>The degree of price movement in a currency pair.</p>
+            <div class="example">Example: GBP/JPY has higher volatility than EUR/USD</div>
+          </div>
+
+          <div class="term-item">
+            <h3>Slippage</h3>
+            <p>When your order fills at a different price than requested.</p>
+            <div class="example">Example: You buy at 1.1050 but fill at 1.1052</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Reference -->
+      <section class="section quick-reference">
+        <h2>Quick Reference Guide</h2>
+        <div class="reference-grid">
+          <div class="ref-card">
+            <h4>Pip Values (1 Standard Lot)</h4>
+            <ul>
+              <li>EUR/USD, GBP/USD: $10 per pip</li>
+              <li>USD/JPY: ¥1000 per pip</li>
+              <li>USD/CHF: 10 CHF per pip</li>
+            </ul>
+          </div>
+          <div class="ref-card">
+            <h4>Lot Sizes</h4>
+            <ul>
+              <li>Standard: 100,000 units</li>
+              <li>Mini: 10,000 units</li>
+              <li>Micro: 1,000 units</li>
+              <li>Nano: 100 units</li>
+            </ul>
+          </div>
+          <div class="ref-card">
+            <h4>Market Sessions</h4>
+            <ul>
+              <li>Tokyo: 7 PM - 4 AM EST</li>
+              <li>London: 3 AM - 12 PM EST</li>
+              <li>New York: 8 AM - 5 PM EST</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Apply Your Knowledge?</h2>
+        <div class="next-links">
+          <a href="/Learn/Strategies/Scalping" class="next-link">
+            <span>Trading Strategies →</span>
+            <small>Learn different trading approaches</small>
+          </a>
+          <a href="/Learn/PlatformTools/MetaTrader" class="next-link">
+            <span>MetaTrader Guide →</span>
+            <small>Master the platform</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  
+</Layout>

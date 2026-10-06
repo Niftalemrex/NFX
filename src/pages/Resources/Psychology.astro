@@ -1,0 +1,345 @@
+---
+// src/pages/Resources/Psychology.astro
+import Layout from '../../layouts/BaseLayout.astro';
+import './Psychology.css';
+
+// Type definitions
+interface Book {
+  id: number;
+  title: string;
+  author: string;
+  category: string;
+  rating: number;
+  year: string;
+  description: string;
+  file: string;
+  type: string;
+}
+
+interface BookInfo {
+  title: string;
+  author: string;
+  category: string;
+  rating: number;
+}
+
+// All your book files
+const bookFiles: string[] = [
+  "20 Most Common Trading Mistakes_ And How 2009).epub",
+  "200 Short Trading Psychology Truths - YVAN BYEAJEE.pdf",
+  "25_Rules_Of_Forex_Trading_Discipline.pdf",
+  "8 Minute Meditation_  Quiet Your Mind. Change(2004.pdf",
+  "Acres of Diamonds. Our Everyday Opportunities(2012).epub",
+  "Amharic Mark_Douglas_Trading_in_the_Zone.pdf",
+  "Ari_Kiev_1998_Trading_To_Win_The.pdf",
+  "Ari_Kiev_Hedge_Fund_Leadership_How.pdf",
+  "Believe It to Achieve It - Brian Tracy.pdf",
+  "Born_to_Win_Workbook_by_Zig_Ziglar.pdf",
+  "Bulletproof_Trader_Evidence_Ba_Steve_Ward.epub",
+  "Chronicles of a Million Dollar Trader by Don Miller.pdf",
+  "Curtis_Faith_Trading_from_Your_G.pdf",
+  "Curtis_Faith_Way_of_the_turtle__060320132720.pdf",
+  "Eat that frog.pdf",
+  "Eckhart_Tolle_The_Power_of_Now_.epub",
+  "EmotionFreeTradingBook(1).pdf",
+  "Flash Crash - Liam Vaughan.epub",
+  "Forex A quick beginner's guide - Richard Smiths.pdf",
+  "Hedge Fund Masters How Top Hedge.pdf",
+  "How_To_Trade_In_Stocks_by_Jesse_Livermore_OS_2_API_Research_PDFDrive.pdf",
+  "idoc.pub_inside-the-mind-of-the-turtlespdf.pdf",
+  "Inside A Traders Mind.pdf",
+  "Inside-a-Traders-Mind.pdf",
+  "James_F_Dalton,_Eric_T_Jones,_Robert_Bevan_Dalton_Mind_over_Markets.pdf",
+  "Jason_Alan_Jankovsky_Time_Compression_Trading_Exploiting_Multiple.pdf",
+  "Jesse Livermore Reminiscences Of A Stock Operator.pdf",
+  "Jesse_L_Livermore_How_to_Trade_in_Stocks_The_Lb_ok_cc1.pdf",
+  "Just shut Up And Do It(Brian Tracy).pdf",
+  "Lee_Freeman_Shor_The_Art_of_Execution_How_the_world's_best_investors.epub",
+  "Mark Crisp - 123 Trading Signal.pdf",
+  "Mark Crisp 7 Habits Of A Higly Sucsessfull Trader(1).pdf",
+  "Mark Douglas - The Disciplined Trader.pdf.pdf",
+  "Mark Douglas- The Complete trader (1).pdf",
+  "Mark Douglas- The Complete trader.pdf",
+  "Market_Mind_Games_A_Radical_Psychology_of_Investing,_Trading_and.epub",
+  "Mark_Minervini_Trade_Like_a_Stock.pdf",
+  "Martin Meadows - 365 Days With Self-Discipline.epub",
+  "Mastering Treding Psychology.pdf",
+  "Mastering_Trading_Psychology_Improve_Your_Trading_with_Firsthand.pdf",
+  "Mastering_Trading_Stress_Strategies_for_Maximizing_Performance.pdf",
+  "Millionaire SuccessHabits Tradersinn(1).pdf",
+  "Mindset Secrets for Winning by Mark Minervini.pdf",
+  "Miracle_of_Discipline.pdf",
+  "Momentum_Masters_A_Roundtable_Interview_with_Super_Traders_Minervini.pdf",
+  "MTP 2020 - Mark Minervini.pdf",
+  "One_Good_Trade_Inside_the_Highly.pdf",
+  "power-subconscious-mind.pdf",
+  "Richard Wiseman - 59 Seconds_ Think a Little, Ch_Lot (v5.0).epub",
+  "Risk Management in Trading@TradersLibrary.pdf",
+  "Risk Management.pdf",
+  "Secrets of Self-Made Millionair - Adam Khoo.pdf",
+  "See-You-At-The-Top-By-Zig-Ziglar_270118105220.pdf",
+  "Steve_Ward_High_Performance_Trading_.pdf",
+  "The Achievement Habit - Roth, Bernard.pdf",
+  "The Behavior Gap - Carl Richards.pdf",
+  "The Chimp Paradox.pdf",
+  "The Death of Money.pdf",
+  "The Discipline Trader Developing Winning Attitude By Mark Douglas.pdf",
+  "The Disciplined Trader_ Developing Winning - Douglas, Mark.epub",
+  "The Mental Game of Trading - Jared Tendler, M.S_.pdf",
+  "The Mental Strategies of Top Traders.pdf",
+  "The Power of Now_ A Guide to Spiritual Enlightenment.pdf",
+  "The Power Of Positive Thinking.pdf",
+  "The Psychology of Investing 6th.Ed. - John R. Nofsinger.pdf",
+  "the-7-habits-ofhighly-effective-people.pdf",
+  "The_essence_of_trading_psychology.pdf",
+  "The_Hour_Between_Dog_and_Wolf_Risk_Taking,_Gut_Feelings_and_the.pdf",
+  "The_Mental_Game_of_Poker_Proven_Strategies_for_Improving_Tilt_Control.pdf",
+  "The_Three_Skills_of_Top_Trading.pdf",
+  "THINK AND GROW RICH BY NAPOLEON HILL .pdf",
+  "Think and Trade like Champion.pdf",
+  "Think_and_Grow_Rich_by_Napoleon_Hill.pdf",
+  "Top_Performance_by_Zig_Ziglar_020819231659@personalitydevelopmentbooks.epub",
+  "Trade Like Jesse Livermore - Richard Smitten.pdf",
+  "Tradermind- Get a Mindful Edge in the Markets - Steve Ward.pdf",
+  "Trade_Mindfully_Achieve_Your_Optimum.pdf",
+  "Trading in the Zone - Mark Douglas.pdf",
+  "TRADING PSYCHOLOGY.pdf",
+  "Trading Rules that Work - Jason Alan Jankovsky.pdf",
+  "Trading without gambling.pdf",
+  "Trading_in_the_Zone_Maximizing_Performance_with_Focus_and_Discipline.pdf",
+  "Trading_on_Target_How_To_Cultivate_a_Winners_State_of_Mind_Adrienne.epub",
+  "Warrior_Trading_Inside_the_Mind.pdf",
+  "Why emotions mess with your trading.pdf",
+  "Wyckoff JESSE LIVERMORE METHODS.pdf",
+  "Wyckoff Method and Cheet Sheet@FOREX Syllabus (1).pdf",
+  "Zero to Hero - YVAN BYEAJEE.epub"
+];
+
+// Function to extract book info from filename
+function extractBookInfo(filename: string): BookInfo {
+  let name: string = filename.replace(/\.(pdf|epub)$/i, '');
+  let title: string = name;
+  let author: string = "Unknown Author";
+  
+  const patterns: RegExp[] = [
+    /^([^-]+)\s*-\s*(.+)$/,
+    /^(.+?)\s+by\s+(.+)$/i,
+    /^(.+?)_by_(.+)$/i,
+  ];
+  
+  for (const pattern of patterns) {
+    const match: RegExpMatchArray | null = name.match(pattern);
+    if (match) {
+      if (pattern.toString().includes('by')) {
+        title = match[1] || title;
+        author = match[2] || author;
+      } else {
+        author = match[1] || author;
+        title = match[2] || title;
+      }
+      break;
+    }
+  }
+  
+  title = title.replace(/[_-]/g, ' ').replace(/\s+/g, ' ').trim();
+  author = author.replace(/[_-]/g, ' ').replace(/\s+/g, ' ').trim();
+  title = title.split(' ').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+  
+  let category: string = "Psychology";
+  const titleLower: string = title.toLowerCase();
+  if (titleLower.includes('trading')) category = "Trading Psychology";
+  else if (titleLower.includes('discipline')) category = "Discipline";
+  else if (titleLower.includes('mindset')) category = "Mindset";
+  else if (titleLower.includes('success')) category = "Success";
+  
+  let rating: number = 4;
+  const classics: string[] = [
+    'Trading in the Zone', 'The Disciplined Trader', 'Think and Grow Rich',
+    'The Power of Now', 'The Chimp Paradox', 'Reminiscences'
+  ];
+  if (classics.some((c: string) => title.includes(c))) rating = 5;
+  
+  return { title, author, category, rating };
+}
+
+const books: Book[] = bookFiles.map((file: string, index: number) => {
+  const info: BookInfo = extractBookInfo(file);
+  const isPdf: boolean = file.toLowerCase().endsWith('.pdf');
+  return {
+    id: index + 1,
+    title: info.title,
+    author: info.author,
+    category: info.category,
+    rating: info.rating,
+    year: "Unknown",
+    description: `${info.title} by ${info.author} - Essential reading for traders.`,
+    file: file,
+    type: isPdf ? 'pdf' : 'epub'
+  };
+});
+
+const categories: string[] = [...new Set(books.map((book: Book) => book.category))];
+const featuredBooks: Book[] = books.filter((b: Book) => b.rating === 5).slice(0, 8);
+const totalBooks: number = books.length;
+
+function renderStars(rating: number): string {
+  const fullStar = '&#9733;';
+  const emptyStar = '&#9734;';
+  return fullStar.repeat(rating) + emptyStar.repeat(5 - rating);
+}
+---
+
+<Layout title="Trading Psychology Library - NFX Learning">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <main class="psychology-page">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Trading Psychology Library</h1>
+        <p class="subtitle">Master your mindset - {totalBooks}+ premium psychology books for traders</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-number">{totalBooks}+</div>
+            <div class="stat-label">Premium Books</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">80+</div>
+            <div class="stat-label">Expert Authors</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free Access</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <div class="content-wrapper">
+      <!-- Why Psychology Section -->
+      <section class="section">
+        <h2>Why Psychology is Everything</h2>
+        <p>
+          Trading is 80% psychology and 20% strategy. Even the best trading system will fail if you can't control 
+          your emotions. This library contains {totalBooks}+ premium books to help you develop the right mindset.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">80%</div>
+            <div class="stat-label">Psychology</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">20%</div>
+            <div class="stat-label">Strategy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">90%</div>
+            <div class="stat-label">Fail Due to Psychology</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Books Section -->
+      <section class="section">
+        <h2>Featured Classics</h2>
+        <p>Essential reading for every trader - These books have transformed countless trading careers.</p>
+        
+        <div class="books-grid">
+          {featuredBooks.map((book: Book) => (
+            <div class="book-card" data-category={book.category.toLowerCase()} data-title={book.title.toLowerCase()} data-author={book.author.toLowerCase()}>
+              <div class="book-icon">&#128218;</div>
+              <h3>{book.title}</h3>
+              <p class="book-author">{book.author}</p>
+              <div class="book-rating" set:html={renderStars(book.rating)}></div>
+              <p class="book-year">{book.year}</p>
+              <p class="book-desc">{book.description}</p>
+              <a href={`/books/${encodeURIComponent(book.file)}`} target="_blank" class="read-btn">
+                Read Online &rarr;
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Complete Library Section -->
+      <section class="section">
+        <h2>Complete Library</h2>
+        <p>Browse our complete collection of {totalBooks}+ trading psychology resources.</p>
+        
+        <div class="search-bar">
+          <div class="search-icon">&#128269;</div>
+          <input type="text" id="searchInput" placeholder="Search by title or author..." class="search-input" />
+          <select id="categoryFilter" class="category-select">
+            <option value="all">All Categories</option>
+            {categories.map((cat: string) => (
+              <option value={cat.toLowerCase()}>{cat}</option>
+            ))}
+          </select>
+        </div>
+        
+        <div class="books-grid" id="booksGrid">
+          {books.map((book: Book) => (
+            <div class="book-card" data-category={book.category.toLowerCase()} data-title={book.title.toLowerCase()} data-author={book.author.toLowerCase()}>
+              <div class="book-icon">&#128214;</div>
+              <h3>{book.title.length > 40 ? book.title.substring(0, 40) + '...' : book.title}</h3>
+              <p class="book-author">{book.author}</p>
+              <div class="book-rating" set:html={renderStars(book.rating)}></div>
+              <div class="book-type">{book.type.toUpperCase()}</div>
+              <a href={`/books/${encodeURIComponent(book.file)}`} target="_blank" class="read-btn small">
+                Read Online
+              </a>
+            </div>
+          ))}
+        </div>
+        
+        <div class="total-count">
+          Showing <span id="visibleCount">{totalBooks}</span> of {totalBooks} books
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<script is:inline>
+  (function() {
+    var searchInput = document.getElementById('searchInput');
+    var categoryFilter = document.getElementById('categoryFilter');
+    var visibleCountSpan = document.getElementById('visibleCount');
+    
+    if (searchInput && categoryFilter) {
+      var bookCards = document.querySelectorAll('.book-card');
+      
+      function filterBooks() {
+        var searchTerm = searchInput.value.toLowerCase();
+        var category = categoryFilter.value;
+        var visibleCount = 0;
+        
+        for (var i = 0; i < bookCards.length; i++) {
+          var card = bookCards[i];
+          var title = card.getAttribute('data-title') || '';
+          var author = card.getAttribute('data-author') || '';
+          var cardCategory = card.getAttribute('data-category') || '';
+          
+          var matchesSearch = title.indexOf(searchTerm) !== -1 || author.indexOf(searchTerm) !== -1;
+          var matchesCategory = category === 'all' || cardCategory === category;
+          
+          if (matchesSearch && matchesCategory) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        }
+        
+        if (visibleCountSpan) {
+          visibleCountSpan.textContent = visibleCount;
+        }
+      }
+      
+      searchInput.addEventListener('input', filterBooks);
+      categoryFilter.addEventListener('change', filterBooks);
+    }
+  })();
+</script>

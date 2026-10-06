@@ -1,0 +1,206 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './Scalping.css';
+---
+
+<Layout title="Scalping Strategy - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Scalping Strategy</h1>
+        <p class="subtitle">Fast-paced short-term trading for consistent small profits</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Scalping?</h2>
+        <p>
+          Scalping is a trading strategy that focuses on making numerous small profits from minor price changes throughout the day. 
+          Scalpers typically hold positions for seconds to minutes, aiming to profit from bid-ask spreads and small price movements.
+        </p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">Seconds - Minutes</div>
+            <div class="stat-label">Trade Duration</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">5-20 pips</div>
+            <div class="stat-label">Target Profit</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">5-100+</div>
+            <div class="stat-label">Daily Trades</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Characteristics -->
+      <section class="section">
+        <h2>Key Characteristics</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⏱️</div>
+            <h3>Very Short Timeframes</h3>
+            <p>1-minute, 5-minute, or tick charts</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Small Profit Targets</h3>
+            <p>5-20 pips per trade</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Execution</h3>
+            <p>Instant order execution required</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>High Volume</h3>
+            <p>Many trades per day</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Markets -->
+      <section class="section">
+        <h2>Best Markets for Scalping</h2>
+        <div class="markets-grid">
+          <div class="market-card">
+            <h3>EUR/USD</h3>
+            <p>Lowest spreads, high liquidity</p>
+            <span class="rating">★★★★★</span>
+          </div>
+          <div class="market-card">
+            <h3>USD/JPY</h3>
+            <p>Tight spreads, good volatility</p>
+            <span class="rating">★★★★☆</span>
+          </div>
+          <div class="market-card">
+            <h3>GBP/USD</h3>
+            <p>Good volatility, slightly wider spreads</p>
+            <span class="rating">★★★★☆</span>
+          </div>
+          <div class="market-card">
+            <h3>Gold (XAU/USD)</h3>
+            <p>Good volatility, higher spreads</p>
+            <span class="rating">★★★☆☆</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scalping Strategies -->
+      <section class="section">
+        <h2>Popular Scalping Strategies</h2>
+        
+        <div class="strategy-block">
+          <h3>1. Bid-Ask Spread Scalping</h3>
+          <p>Profit from the difference between bid and ask prices during high liquidity periods.</p>
+          <div class="tip">💡 Best during London/New York overlap</div>
+        </div>
+
+        <div class="strategy-block">
+          <h3>2. Moving Average Crossovers</h3>
+          <p>Use fast and slow MAs on 1-minute charts for quick entries.</p>
+          <div class="code-simple">5 EMA + 13 EMA crossover</div>
+        </div>
+
+        <div class="strategy-block">
+          <h3>3. Support/Resistance Bounces</h3>
+          <p>Trade bounces off key levels on lower timeframes.</p>
+        </div>
+
+        <div class="strategy-block">
+          <h3>4. News Scalping</h3>
+          <p>Trade rapid movements during high-impact news releases.</p>
+          <div class="warning">⚠️ High risk - use tight stops</div>
+        </div>
+      </section>
+
+      <!-- Essential Tools -->
+      <section class="section">
+        <h2>Essential Tools for Scalping</h2>
+        <ul class="tools-list">
+          <li><strong>ECN Broker</strong> - Tight spreads and fast execution</li>
+          <li><strong>Low Latency Connection</strong> - Fiber optic or VPS near broker servers</li>
+          <li><strong>One-Click Trading</strong> - Eliminate order confirmation delays</li>
+          <li><strong>Level 2 Data</strong> - See order book depth</li>
+          <li><strong>Hotkeys</strong> - Keyboard shortcuts for instant entries/exits</li>
+        </ul>
+      </section>
+
+      <!-- Risk Management -->
+      <section class="section">
+        <h2>Scalping Risk Management</h2>
+        <div class="risk-grid">
+          <div class="risk-card">
+            <div class="risk-number">1:1</div>
+            <p>Reward:Risk Ratio (or higher)</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">5-10 pips</div>
+            <p>Tight Stop Loss</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">1-2%</div>
+            <p>Max daily risk of account</p>
+          </div>
+          <div class="risk-card">
+            <div class="risk-number">0.5-1%</div>
+            <p>Max risk per trade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pros & Cons -->
+      <section class="section">
+        <h2>Pros & Cons of Scalping</h2>
+        <div class="pros-cons">
+          <div class="pros">
+            <h3>✅ Pros</h3>
+            <ul>
+              <li>No overnight risk</li>
+              <li>Many trading opportunities</li>
+              <li>Small stop losses</li>
+              <li>Compounding potential</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h3>❌ Cons</h3>
+            <ul>
+              <li>High stress levels</li>
+              <li>Requires constant attention</li>
+              <li>High transaction costs</li>
+              <li>Broker restrictions</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Learn More?</h2>
+        <div class="next-links">
+          <a href="/Learn/Strategies/SwingTrading" class="next-link">
+            <span>Swing Trading →</span>
+            <small>Capture medium-term moves</small>
+          </a>
+          <a href="/Learn/Strategies/PositionTrading" class="next-link">
+            <span>Position Trading →</span>
+            <small>Long-term fundamental approach</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

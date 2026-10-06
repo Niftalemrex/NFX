@@ -1,0 +1,247 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './TradingCalculator.css';
+---
+
+<Layout title="Trading Calculator - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Trading Calculator</h1>
+        <p class="subtitle">Pip, margin, position size, and risk management tools</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Essential Trading Calculations</h2>
+        <p>
+          Understanding how to calculate pip values, position sizes, and risk is crucial for every trader. 
+          These calculations help you manage risk effectively and trade with confidence.
+        </p>
+      </section>
+
+      <!-- Pip Calculator -->
+      <section class="section">
+        <h2>Pip Value Calculator</h2>
+        <div class="calculator-card">
+          <h3>📊 Formula:</h3>
+          <div class="formula">
+            <p><strong>Pip Value = (1 Pip / Exchange Rate) × Lot Size</strong></p>
+          </div>
+          
+          <div class="examples">
+            <h4>Example 1: EUR/USD</h4>
+            <ul>
+              <li>1 standard lot (100,000 units)</li>
+              <li>Exchange rate: 1.1000</li>
+              <li>Pip value = (0.0001 / 1.1000) × 100,000 = $9.09 per pip</li>
+            </ul>
+            
+            <h4>Example 2: USD/JPY</h4>
+            <ul>
+              <li>1 standard lot (100,000 units)</li>
+              <li>Exchange rate: 150.00</li>
+              <li>Pip value = (0.01 / 150.00) × 100,000 = ¥6.67 per pip</li>
+            </ul>
+          </div>
+          
+          <div class="quick-reference">
+            <h4>Quick Pip Values (Standard Lot):</h4>
+            <div class="quick-grid">
+              <div class="quick-item">EUR/USD: $10</div>
+              <div class="quick-item">GBP/USD: $10</div>
+              <div class="quick-item">USD/JPY: ¥1000</div>
+              <div class="quick-item">USD/CHF: 10 CHF</div>
+              <div class="quick-item">AUD/USD: $10</div>
+              <div class="quick-item">USD/CAD: 10 CAD</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Position Size Calculator -->
+      <section class="section">
+        <h2>Position Size Calculator</h2>
+        <div class="calculator-card">
+          <h3>📐 Formula:</h3>
+          <div class="formula">
+            <p><strong>Position Size = (Account Risk × Pip Value) / Stop Loss in Pips</strong></p>
+          </div>
+          
+          <div class="examples">
+            <h4>Example:</h4>
+            <ul>
+              <li>Account balance: $10,000</li>
+              <li>Risk per trade: 2% ($200)</li>
+              <li>Stop loss: 20 pips</li>
+              <li>Pip value for EUR/USD: $10</li>
+              <li>Position size = ($200 × $10) / 20 = 100,000 units (1 standard lot)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Risk Calculator -->
+      <section class="section">
+        <h2>Risk Calculator</h2>
+        <div class="calculator-card">
+          <h3>🎯 How Much to Risk Per Trade:</h3>
+          <div class="risk-rules">
+            <div class="risk-rule">
+              <span class="rule-percent">1-2%</span>
+              <p>Recommended risk per trade for most traders</p>
+            </div>
+            <div class="risk-rule">
+              <span class="rule-percent">0.5-1%</span>
+              <p>Conservative risk for beginners</p>
+            </div>
+            <div class="risk-rule">
+              <span class="rule-percent">3-5%</span>
+              <p>Aggressive risk - not recommended</p>
+            </div>
+          </div>
+          
+          <div class="example-risk">
+            <h4>Risk Calculation Example:</h4>
+            <p>Account: $5,000 | Risk: 2% = $100 maximum loss per trade</p>
+            <p>If stop loss = 25 pips → Position size = $4 per pip ($100 ÷ 25)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Margin Calculator -->
+      <section class="section">
+        <h2>Margin Calculator</h2>
+        <div class="calculator-card">
+          <h3>📊 Formula:</h3>
+          <div class="formula">
+            <p><strong>Required Margin = (Position Size × Exchange Rate) / Leverage</strong></p>
+          </div>
+          
+          <div class="examples">
+            <h4>Example:</h4>
+            <ul>
+              <li>Position: 1 standard lot EUR/USD (100,000 units)</li>
+              <li>Price: 1.1000</li>
+              <li>Leverage: 1:100</li>
+              <li>Required margin = (100,000 × 1.1000) / 100 = $1,100</li>
+            </ul>
+          </div>
+          
+          <div class="margin-table">
+            <h4>Margin Requirements by Leverage:</h4>
+            <div class="margin-grid">
+              <div class="margin-item">1:30 → 3.33%</div>
+              <div class="margin-item">1:50 → 2%</div>
+              <div class="margin-item">1:100 → 1%</div>
+              <div class="margin-item">1:200 → 0.5%</div>
+              <div class="margin-item">1:500 → 0.2%</div>
+              <div class="margin-item">1:1000 → 0.1%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reward to Risk Ratio -->
+      <section class="section">
+        <h2>Reward to Risk Ratio (R:R)</h2>
+        <div class="calculator-card">
+          <h3>🎯 Formula:</h3>
+          <div class="formula">
+            <p><strong>R:R Ratio = Potential Profit / Potential Loss</strong></p>
+          </div>
+          
+          <div class="examples">
+            <h4>Example:</h4>
+            <ul>
+              <li>Risk: 20 pips (stop loss)</li>
+              <li>Reward: 60 pips (take profit)</li>
+              <li>R:R Ratio = 60/20 = 3:1</li>
+            </ul>
+          </div>
+          
+          <div class="rr-tips">
+            <h4>Minimum Recommended Ratios:</h4>
+            <ul>
+              <li>✅ Day Trading: 1.5:1 or higher</li>
+              <li>✅ Swing Trading: 2:1 or higher</li>
+              <li>✅ Position Trading: 3:1 or higher</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Breakeven Win Rate -->
+      <section class="section">
+        <h2>Breakeven Win Rate Calculator</h2>
+        <div class="calculator-card">
+          <h3>📊 Formula:</h3>
+          <div class="formula">
+            <p><strong>Breakeven Win Rate = 1 / (1 + R:R Ratio)</strong></p>
+          </div>
+          
+          <div class="examples">
+            <h4>Examples:</h4>
+            <ul>
+              <li>1:1 R:R → Need 50% win rate to breakeven</li>
+              <li>2:1 R:R → Need 33% win rate to breakeven</li>
+              <li>3:1 R:R → Need 25% win rate to breakeven</li>
+            </ul>
+          </div>
+          
+          <div class="winrate-table">
+            <div class="winrate-item">
+              <span>R:R Ratio</span>
+              <span>Breakeven Win Rate</span>
+            </div>
+            <div class="winrate-item">
+              <span>1:1</span>
+              <span>50%</span>
+            </div>
+            <div class="winrate-item">
+              <span>1.5:1</span>
+              <span>40%</span>
+            </div>
+            <div class="winrate-item">
+              <span>2:1</span>
+              <span>33.3%</span>
+            </div>
+            <div class="winrate-item">
+              <span>3:1</span>
+              <span>25%</span>
+            </div>
+            <div class="winrate-item">
+              <span>4:1</span>
+              <span>20%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Explore More Tools & Resources</h2>
+        <div class="next-links">
+          <a href="/ToolsResources/EconomicCalendar" class="next-link">
+            <span>Economic Calendar →</span>
+            <small>Never miss a high-impact event</small>
+          </a>
+          <a href="/ToolsResources/MarketHeatmap" class="next-link">
+            <span>Market Heatmap →</span>
+            <small>Visual currency strength</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

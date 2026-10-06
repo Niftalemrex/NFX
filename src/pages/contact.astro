@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.tsx';
+import styles from './Contact.module.css';
+---
+
+<BaseLayout
+  title="Contact NFX Forex"
+  description="Contact NFX Forex for inquiries, support, and Forex trading assistance."
+>
+  <Hero
+    title="Contact NFX Forex"
+    subtitle="We're here to help. Reach out and our team will respond promptly."
+    ctaText="Get Support"
+    ctaLink="#form"
+    secondaryCtaText="Call Us"
+    secondaryCtaLink="tel:+1234567890"
+    showScrollIndicator={false}
+    client:load
+  />
+
+  <!-- Contact Section: Split layout (form + info) -->
+  <section class={styles.contactSection}>
+    <div class={styles.container}>
+      <!-- Left: Contact Info -->
+      <div class={styles.contactInfo}>
+        <h2>Let’s talk</h2>
+        <p>Whether you have a question about your account, trading, or anything else, our team is ready to answer.</p>
+        
+        <div class={styles.infoList}>
+          <div class={styles.infoItem}>
+            <span class={styles.icon}>📍</span>
+            <div>
+              <strong>Visit us</strong>
+              <span>123 Finance Street, London, UK</span>
+            </div>
+          </div>
+          <div class={styles.infoItem}>
+            <span class={styles.icon}>📞</span>
+            <div>
+              <strong>Call us</strong>
+              <span>+44 (0) 20 1234 5678</span>
+            </div>
+          </div>
+          <div class={styles.infoItem}>
+            <span class={styles.icon}>✉️</span>
+            <div>
+              <strong>Email us</strong>
+              <span>support@nfxforex.com</span>
+            </div>
+          </div>
+          <div class={styles.infoItem}>
+            <span class={styles.icon}>⏰</span>
+            <div>
+              <strong>Support hours</strong>
+              <span>24/7 – Forex market hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class={styles.social}>
+          <p>Follow us:</p>
+          <div class={styles.socialLinks}>
+            <a href="#">𝕏</a>
+            <a href="#">in</a>
+            <a href="#">📷</a>
+            <a href="#">✈️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form (glass card) -->
+      <div class={styles.formCard}>
+        <h2>Send us a message</h2>
+        <form class={styles.contactForm} id="form">
+          <div class={styles.formGroup}>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class={styles.formGroup}>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class={styles.formGroup}>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows={5} placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class={styles.submitBtn}>Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,284 @@
+---
+// Astro component frontmatter
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Layout from '../../layouts/BaseLayout.astro';
+import './Indicators.css';
+---
+
+<Layout title="Technical Indicators - NFX Learning">
+  <Header client:load />
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Technical Indicators</h1>
+        <p class="subtitle">RSI, MACD, Bollinger Bands - Essential tools for market analysis</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What are Technical Indicators?</h2>
+        <p>
+          Technical indicators are mathematical calculations based on price, volume, or open interest. 
+          They help traders identify trends, momentum, volatility, and potential reversal points in the market.
+        </p>
+        
+        <div class="indicator-types">
+          <div class="type-badge">Trend Indicators</div>
+          <div class="type-badge">Momentum Indicators</div>
+          <div class="type-badge">Volatility Indicators</div>
+          <div class="type-badge">Volume Indicators</div>
+        </div>
+      </section>
+
+      <!-- RSI - Relative Strength Index -->
+      <section class="section">
+        <h2>RSI (Relative Strength Index)</h2>
+        <p>
+          The RSI measures the speed and change of price movements on a scale of 0-100. It helps identify 
+          overbought and oversold conditions.
+        </p>
+        
+        <div class="indicator-card">
+          <div class="indicator-header">
+            <h3>📊 RSI Settings</h3>
+            <span>Default: 14 periods</span>
+          </div>
+          <div class="indicator-content">
+            <div class="level-box">
+              <div class="level overbought">
+                <strong>70</strong>
+                <p>Overbought - Potential reversal down</p>
+              </div>
+              <div class="level oversold">
+                <strong>30</strong>
+                <p>Oversold - Potential reversal up</p>
+              </div>
+              <div class="level neutral">
+                <strong>30-70</strong>
+                <p>Neutral zone</p>
+              </div>
+            </div>
+            
+            <h4>How to Trade RSI:</h4>
+            <ul>
+              <li>Buy when RSI exits oversold (30) and crosses above 30</li>
+              <li>Sell when RSI exits overbought (>70) and crosses below 70</li>
+              <li>Look for divergences between price and RSI for stronger signals</li>
+              <li>Bullish divergence: Price makes lower low, RSI makes higher low</li>
+              <li>Bearish divergence: Price makes higher high, RSI makes lower high</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MACD -->
+      <section class="section">
+        <h2>MACD (Moving Average Convergence Divergence)</h2>
+        <p>
+          MACD shows the relationship between two moving averages and helps identify trend direction, 
+          momentum, and potential reversal points.
+        </p>
+        
+        <div class="indicator-card">
+          <div class="indicator-header">
+            <h3>📈 MACD Components</h3>
+            <span>Default: 12, 26, 9</span>
+          </div>
+          <div class="indicator-content">
+            <div class="macd-components">
+              <div class="component">
+                <strong>MACD Line</strong>
+                <p>12-period EMA - 26-period EMA</p>
+              </div>
+              <div class="component">
+                <strong>Signal Line</strong>
+                <p>9-period EMA of MACD line</p>
+              </div>
+              <div class="component">
+                <strong>Histogram</strong>
+                <p>MACD Line - Signal Line</p>
+              </div>
+            </div>
+            
+            <h4>How to Trade MACD:</h4>
+            <ul>
+              <li>Buy when MACD line crosses ABOVE signal line (bullish crossover)</li>
+              <li>Sell when MACD line crosses BELOW signal line (bearish crossover)</li>
+              <li>Histogram turning from negative to positive = bullish momentum</li>
+              <li>Histogram turning from positive to negative = bearish momentum</li>
+              <li>Look for divergences for stronger reversal signals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bollinger Bands -->
+      <section class="section">
+        <h2>Bollinger Bands</h2>
+        <p>
+          Bollinger Bands measure market volatility using a moving average with upper and lower bands 
+          set at standard deviation levels.
+        </p>
+        
+        <div class="indicator-card">
+          <div class="indicator-header">
+            <h3>📉 Bollinger Bands Settings</h3>
+            <span>Default: 20 period, 2 standard deviations</span>
+          </div>
+          <div class="indicator-content">
+            <div class="bands-components">
+              <div class="band">
+                <strong>Upper Band</strong>
+                <p>20 SMA + (2 × standard deviation)</p>
+              </div>
+              <div class="band">
+                <strong>Middle Band</strong>
+                <p>20-period Simple Moving Average</p>
+              </div>
+              <div class="band">
+                <strong>Lower Band</strong>
+                <p>20 SMA - (2 × standard deviation)</p>
+              </div>
+            </div>
+            
+            <h4>How to Trade Bollinger Bands:</h4>
+            <ul>
+              <li>Price touching lower band in uptrend = potential buy</li>
+              <li>Price touching upper band in downtrend = potential sell</li>
+              <li>Band squeeze (bands close together) = upcoming volatility expansion</li>
+              <li>Band expansion = strong trend in progress</li>
+              <li>Price walking the upper band = strong uptrend</li>
+              <li>Price walking the lower band = strong downtrend</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Moving Averages -->
+      <section class="section">
+        <h2>Moving Averages</h2>
+        <p>
+          Moving averages smooth out price data to help identify trend direction and potential support/resistance levels.
+        </p>
+        
+        <div class="indicator-card">
+          <div class="indicator-header">
+            <h3>📊 Types of Moving Averages</h3>
+          </div>
+          <div class="indicator-content">
+            <div class="ma-types">
+              <div class="ma-type">
+                <strong>SMA (Simple)</strong>
+                <p>Equal weight to all prices</p>
+              </div>
+              <div class="ma-type">
+                <strong>EMA (Exponential)</strong>
+                <p>More weight to recent prices</p>
+              </div>
+            </div>
+            
+            <h4>Popular Moving Average Settings:</h4>
+            <ul>
+              <li><strong>20 EMA:</strong> Short-term trend (day trading)</li>
+              <li><strong>50 EMA:</strong> Medium-term trend (swing trading)</li>
+              <li><strong>200 EMA:</strong> Long-term trend (position trading)</li>
+            </ul>
+            
+            <h4>How to Trade Moving Averages:</h4>
+            <ul>
+              <li>Price above MA = uptrend, price below MA = downtrend</li>
+              <li>Golden Cross: 50 MA crosses above 200 MA = bullish signal</li>
+              <li>Death Cross: 50 MA crosses below 200 MA = bearish signal</li>
+              <li>MA acts as dynamic support/resistance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fibonacci Retracement -->
+      <section class="section">
+        <h2>Fibonacci Retracement</h2>
+        <p>
+          Fibonacci levels help identify potential reversal points during pullbacks in a trending market.
+        </p>
+        
+        <div class="indicator-card">
+          <div class="indicator-header">
+            <h3>📐 Key Fibonacci Levels</h3>
+          </div>
+          <div class="indicator-content">
+            <div class="fib-levels">
+              <div class="level"><strong>23.6%</strong><span>Shallow pullback</span></div>
+              <div class="level"><strong>38.2%</strong><span>Common reversal zone</span></div>
+              <div class="level"><strong>50%</strong><span>Psychological level</span></div>
+              <div class="level"><strong>61.8%</strong><span>Golden ratio - strongest</span></div>
+              <div class="level"><strong>78.6%</strong><span>Deep pullback</span></div>
+            </div>
+            
+            <h4>How to Trade Fibonacci:</h4>
+            <ul>
+              <li>In uptrend: Draw from swing low to swing high - buy at retracement levels</li>
+              <li>In downtrend: Draw from swing high to swing low - sell at retracement levels</li>
+              <li>61.8% is considered the strongest reversal level</li>
+              <li>Combine with candlestick patterns for confirmation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combining Indicators -->
+      <section class="section">
+        <h2>Combining Indicators Effectively</h2>
+        <div class="combination-tips">
+          <div class="tip-card">
+            <h3>🎯 Trend + Momentum</h3>
+            <p>Use Moving Averages for trend + RSI for entry timing</p>
+          </div>
+          <div class="tip-card">
+            <h3>📊 Volatility + Trend</h3>
+            <p>Bollinger Bands for volatility + MACD for trend confirmation</p>
+          </div>
+          <div class="tip-card">
+            <h3>⚡ The 2-3 Indicator Rule</h3>
+            <p>Don't use more than 2-3 indicators - avoid analysis paralysis</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="section">
+        <h2>Common Indicator Mistakes</h2>
+        <ul class="mistakes-list">
+          <li>❌ Using too many indicators (over-analysis)</li>
+          <li>❌ Ignoring the higher timeframe trend</li>
+          <li>❌ Trading RSI divergence without confirmation</li>
+          <li>❌ Using default settings without optimization</li>
+          <li>❌ Expecting indicators to be 100% accurate</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Technical Analysis</h2>
+        <div class="next-links">
+          <a href="/TechnicalAnalysis/ChartPatterns" class="next-link">
+            <span>Chart Patterns →</span>
+            <small>Head & shoulders, triangles</small>
+          </a>
+          <a href="/TechnicalAnalysis/SupplyDemand" class="next-link">
+            <span>Supply & Demand →</span>
+            <small>Key reversal zones</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

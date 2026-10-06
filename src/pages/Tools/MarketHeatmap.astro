@@ -1,0 +1,259 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './MarketHeatmap.css';
+---
+
+<Layout title="Market Heatmap - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Market Heatmap</h1>
+        <p class="subtitle">Visual currency strength analysis - Identify the strongest and weakest currencies</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is a Currency Heatmap?</h2>
+        <p>
+          A currency heatmap visually displays the relative strength of currencies against each other. 
+          It helps traders identify which currencies are strong and which are weak, making it easier 
+          to find the best trading opportunities.
+        </p>
+        
+        <div class="color-guide">
+          <h3>Color Guide:</h3>
+          <div class="colors">
+            <div class="color strong">🟢 Strong (Green)</div>
+            <div class="color neutral">🟡 Neutral (Yellow)</div>
+            <div class="color weak">🔴 Weak (Red)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Read Heatmap -->
+      <section class="section">
+        <h2>How to Read a Currency Heatmap</h2>
+        <div class="heatmap-explanation">
+          <div class="example">
+            <h3>Example Analysis:</h3>
+            <ul>
+              <li>If USD is GREEN (strong) and EUR is RED (weak) → Look to SELL EUR/USD</li>
+              <li>If USD is RED (weak) and EUR is GREEN (strong) → Look to BUY EUR/USD</li>
+              <li>Strongest vs Weakest = Best trading opportunity</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Currency Strength Table -->
+      <section class="section">
+        <h2>Current Currency Strength Matrix</h2>
+        <div class="matrix-table">
+          <div class="matrix-header">
+            <div></div>
+            <div>USD</div>
+            <div>EUR</div>
+            <div>GBP</div>
+            <div>JPY</div>
+            <div>AUD</div>
+            <div>CAD</div>
+            <div>CHF</div>
+            <div>NZD</div>
+          </div>
+          
+          <!-- USD Row -->
+          <div class="matrix-row">
+            <div class="row-label">USD</div>
+            <div class="cell neutral">-</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+          </div>
+          
+          <!-- EUR Row -->
+          <div class="matrix-row">
+            <div class="row-label">EUR</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">-</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+          </div>
+          
+          <!-- GBP Row -->
+          <div class="matrix-row">
+            <div class="row-label">GBP</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">-</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+          </div>
+          
+          <!-- JPY Row -->
+          <div class="matrix-row">
+            <div class="row-label">JPY</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">-</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+          </div>
+          
+          <!-- AUD Row -->
+          <div class="matrix-row">
+            <div class="row-label">AUD</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">-</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">NEUTRAL</div>
+          </div>
+          
+          <!-- CAD Row -->
+          <div class="matrix-row">
+            <div class="row-label">CAD</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">-</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+          </div>
+          
+          <!-- CHF Row -->
+          <div class="matrix-row">
+            <div class="row-label">CHF</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">-</div>
+            <div class="cell strong">STRONG</div>
+          </div>
+          
+          <!-- NZD Row -->
+          <div class="matrix-row">
+            <div class="row-label">NZD</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell strong">STRONG</div>
+            <div class="cell neutral">NEUTRAL</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell weak">WEAK</div>
+            <div class="cell neutral">-</div>
+          </div>
+        </div>
+        <p class="note">*This is a sample matrix. Real-time strength changes throughout the trading day.</p>
+      </section>
+
+      <!-- Trading Strategies -->
+      <section class="section">
+        <h2>Trading Strategies Using Heatmap</h2>
+        
+        <div class="strategy-card">
+          <h3>Strategy 1: Strongest vs Weakest</h3>
+          <p>Buy the strongest currency against the weakest currency.</p>
+          <div class="example">Example: Strong USD + Weak EUR = Buy USD/JPY or USD/CHF</div>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Strategy 2: Strength Reversal</h3>
+          <p>When an extremely strong currency starts weakening, look for reversals.</p>
+        </div>
+        
+        <div class="strategy-card">
+          <h3>Strategy 3: Correlation Trading</h3>
+          <p>Use heatmap to confirm correlated pairs (EUR/USD and GBP/USD should move together).</p>
+        </div>
+      </section>
+
+      <!-- Factors Affecting Currency Strength -->
+      <section class="section">
+        <h2>What Drives Currency Strength?</h2>
+        <div class="factors-grid">
+          <div class="factor-card">
+            <h3>🏦 Interest Rates</h3>
+            <p>Higher rates attract foreign investment → Currency strengthens</p>
+          </div>
+          <div class="factor-card">
+            <h3>📊 Economic Growth</h3>
+            <p>Strong GDP, employment, retail sales → Currency strengthens</p>
+          </div>
+          <div class="factor-card">
+            <h3>💰 Inflation</h3>
+            <p>High inflation typically weakens currency (unless central bank raises rates)</p>
+          </div>
+          <div class="factor-card">
+            <h3>🌍 Geopolitics</h3>
+            <p>Political stability strengthens currency, uncertainty weakens</p>
+          </div>
+          <div class="factor-card">
+            <h3>🛢️ Commodity Prices</h3>
+            <p>Oil affects CAD, Gold affects AUD, etc.</p>
+          </div>
+          <div class="factor-card">
+            <h3>📈 Risk Sentiment</h3>
+            <p>Risk-on favors AUD, NZD, CAD. Risk-off favors USD, JPY, CHF</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- When to Check Heatmap -->
+      <section class="section">
+        <h2>Best Times to Check Currency Strength</h2>
+        <div class="times-list">
+          <div class="time-item">🕐 After London Open (3 AM EST)</div>
+          <div class="time-item">🕐 After New York Open (8 AM EST)</div>
+          <div class="time-item">🕐 After major economic news releases</div>
+          <div class="time-item">🕐 At the start of each trading session</div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Explore More Tools & Resources</h2>
+        <div class="next-links">
+          <a href="/ToolsResources/EconomicCalendar" class="next-link">
+            <span>Economic Calendar →</span>
+            <small>Never miss a high-impact event</small>
+          </a>
+          <a href="/ToolsResources/TradingCalculator" class="next-link">
+            <span>Trading Calculator →</span>
+            <small>Pip, margin, risk calculator</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+</Layout>

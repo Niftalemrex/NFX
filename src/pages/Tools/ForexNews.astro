@@ -1,0 +1,184 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './ForexNews.css';
+---
+
+<Layout title="Forex News - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Forex News</h1>
+        <p class="subtitle">Live economic calendar & fundamental analysis for traders</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Why Forex News Matters</h2>
+        <p>
+          Economic news releases are the primary drivers of market volatility. Understanding which events to watch 
+          and how to trade them is essential for any serious trader.
+        </p>
+        
+        <div class="impact-levels">
+          <div class="impact high">
+            <span>🔴 High Impact</span>
+            <p>Major volatility - Trade with caution</p>
+          </div>
+          <div class="impact medium">
+            <span>🟡 Medium Impact</span>
+            <p>Moderate moves - Good trading opportunities</p>
+          </div>
+          <div class="impact low">
+            <span>🟢 Low Impact</span>
+            <p>Minor moves - Usually safe to trade</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Major Economic Indicators -->
+      <section class="section">
+        <h2>Major Economic Indicators</h2>
+        <div class="indicators-grid">
+          <div class="indicator-card">
+            <h3>🏦 Interest Rates</h3>
+            <p><strong>Who:</strong> Central Banks (Fed, ECB, BOE, BOJ)</p>
+            <p><strong>Impact:</strong> Highest - Moves entire markets</p>
+            <p><strong>When:</strong> Monthly/Quarterly</p>
+          </div>
+          <div class="indicator-card">
+            <h3>📊 Non-Farm Payrolls (NFP)</h3>
+            <p><strong>Who:</strong> US Bureau of Labor Statistics</p>
+            <p><strong>Impact:</strong> Very High - USD volatility</p>
+            <p><strong>When:</strong> First Friday of each month</p>
+          </div>
+          <div class="indicator-card">
+            <h3>📈 GDP</h3>
+            <p><strong>Who:</strong> National statistics offices</p>
+            <p><strong>Impact:</strong> High - Shows economic health</p>
+            <p><strong>When:</strong> Quarterly</p>
+          </div>
+          <div class="indicator-card">
+            <h3>💰 CPI (Inflation)</h3>
+            <p><strong>Who:</strong> National statistics offices</p>
+            <p><strong>Impact:</strong> High - Affects rate decisions</p>
+            <p><strong>When:</strong> Monthly</p>
+          </div>
+          <div class="indicator-card">
+            <h3>📉 Unemployment Rate</h3>
+            <p><strong>Who:</strong> Labor departments</p>
+            <p><strong>Impact:</strong> High - Labor market health</p>
+            <p><strong>When:</strong> Monthly</p>
+          </div>
+          <div class="indicator-card">
+            <h3>🛒 Retail Sales</h3>
+            <p><strong>Who:</strong> Commerce departments</p>
+            <p><strong>Impact:</strong> Medium - Consumer spending</p>
+            <p><strong>When:</strong> Monthly</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trading News Events -->
+      <section class="section">
+        <h2>How to Trade News Events</h2>
+        
+        <div class="strategy-box">
+          <h3>Strategy 1: Pre-News Positioning</h3>
+          <p>Enter before the news based on expectations, exit before release</p>
+          <div class="risk">⚠️ High risk - Requires accurate prediction</div>
+        </div>
+        
+        <div class="strategy-box">
+          <h3>Strategy 2: Momentum Trading</h3>
+          <p>Wait 1-2 minutes after release, trade the direction of the breakout</p>
+          <div class="reward">✅ Lower risk - Wait for confirmation</div>
+        </div>
+        
+        <div class="strategy-box">
+          <h3>Strategy 3: Fade the Move</h3>
+          <p>Trade against overreaction when price moves too far</p>
+          <div class="reward">✅ Works well with limit orders</div>
+        </div>
+      </section>
+
+      <!-- News Trading Tips -->
+      <section class="section">
+        <h2>News Trading Tips</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>📊 Know the Expectations</h3>
+            <p>Compare actual vs forecast - deviation drives volatility</p>
+          </div>
+          <div class="tip-card">
+            <h3>⏰ Be Ready Early</h3>
+            <p>Enter positions 5-10 minutes before high-impact news</p>
+          </div>
+          <div class="tip-card">
+            <h3>⚡ Use Tight Stops</h3>
+            <p>News events cause rapid moves - protect your capital</p>
+          </div>
+          <div class="tip-card">
+            <h3>📉 Avoid Trading First Minute</h3>
+            <p>Let initial spike settle, then look for entry</p>
+          </div>
+          <div class="tip-card">
+            <h3>🎯 Focus on Major Pairs</h3>
+            <p>EUR/USD, GBP/USD, USD/JPY have best liquidity</p>
+          </div>
+          <div class="tip-card">
+            <h3>📈 Watch Multiple Timeframes</h3>
+            <p>Higher timeframe trend often resumes after news</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Central Bank Calendar -->
+      <section class="section">
+        <h2>Central Bank Meeting Calendar</h2>
+        <div class="central-banks">
+          <div class="bank-card">
+            <h3>🇺🇸 Federal Reserve (FOMC)</h3>
+            <p>8 meetings per year + press conferences</p>
+          </div>
+          <div class="bank-card">
+            <h3>🇪🇺 European Central Bank (ECB)</h3>
+            <p>8 meetings per year</p>
+          </div>
+          <div class="bank-card">
+            <h3>🇬🇧 Bank of England (BOE)</h3>
+            <p>8 meetings per year</p>
+          </div>
+          <div class="bank-card">
+            <h3>🇯🇵 Bank of Japan (BOJ)</h3>
+            <p>8 meetings per year</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Explore More Tools & Resources</h2>
+        <div class="next-links">
+          <a href="/ToolsResources/EconomicCalendar" class="next-link">
+            <span>Economic Calendar →</span>
+            <small>Never miss a high-impact event</small>
+          </a>
+          <a href="/ToolsResources/MarketHeatmap" class="next-link">
+            <span>Market Heatmap →</span>
+            <small>Visual currency strength</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

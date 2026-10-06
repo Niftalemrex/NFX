@@ -1,0 +1,23 @@
+---
+// src/layouts/BaseLayout.astro
+import SEO from "../components/SEO.astro";
+import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
+import "../styles/global.css"; // global reset
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <SEO title={title} description={description} url="https://nfx.com" />
+  </head>
+  <body style="margin:0; padding:0; width:100%; min-height:100vh; display:flex; flex-direction:column;">
+    <Header client:load />
+
+    <main style="flex:1; width:100%; margin:0; padding:0;">
+      <slot />
+    </main>
+
+    <Footer client:load />
+  </body>
+</html>

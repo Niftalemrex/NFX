@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.tsx';
+import styles from './Services.module.css';
+---
+
+<BaseLayout
+  title="Services NFX Forex"
+  description="Explore the professional Forex trading services offered by NFX Forex."
+>
+  <Hero
+    title="Our Services"
+    subtitle="Professional Forex trading services designed for traders of all levels."
+    ctaText="Open Account"
+    ctaLink="/open-account"
+    secondaryCtaText="Contact Us"
+    secondaryCtaLink="/contact"
+    showScrollIndicator={false}
+    client:load
+  />
+
+  <!-- Services Cards Section -->
+  <section class={styles.servicesSection}>
+    <div class={styles.container}>
+      <div class={styles.card}>
+        <div class={styles.icon}>📈</div>
+        <h3>Forex Trading</h3>
+        <p>Access top-tier trading platforms with real-time data and advanced tools.</p>
+      </div>
+
+      <div class={styles.card}>
+        <div class={styles.icon}>👥</div>
+        <h3>Account Management</h3>
+        <p>Professional account management services tailored to your trading goals.</p>
+      </div>
+
+      <div class={styles.card}>
+        <div class={styles.icon}>📚</div>
+        <h3>Education & Insights</h3>
+        <p>Learn with webinars, tutorials, and market analysis from industry experts.</p>
+      </div>
+
+      <div class={styles.card}>
+        <div class={styles.icon}>🛡️</div>
+        <h3>Support & Assistance</h3>
+        <p>24/7 dedicated support to help you trade confidently and securely.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

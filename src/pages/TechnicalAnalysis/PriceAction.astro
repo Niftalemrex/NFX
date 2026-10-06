@@ -1,0 +1,222 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './PriceAction.css';
+---
+
+<Layout title="Price Action Trading - NFX Learning">
+
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Price Action Trading</h1>
+        <p class="subtitle">Naked chart trading - Reading pure price movement without indicators</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Price Action?</h2>
+        <p>
+          Price action trading is the discipline of making trading decisions based purely on the price movements 
+          shown on a chart, without relying on indicators. It's about understanding market psychology through candlestick patterns.
+        </p>
+        
+        <div class="principle-box">
+          <h3>Core Principle:</h3>
+          <p>"All information is already reflected in the price. Learn to read what the market is telling you."</p>
+        </div>
+      </section>
+
+      <!-- Basic Candlestick Patterns -->
+      <section class="section">
+        <h2>Basic Candlestick Patterns</h2>
+        <div class="patterns-grid">
+          <div class="pattern-card">
+            <h3>📈 Bullish Engulfing</h3>
+            <p>Green candle completely engulfs previous red candle - strong buy signal</p>
+          </div>
+          <div class="pattern-card">
+            <h3>📉 Bearish Engulfing</h3>
+            <p>Red candle completely engulfs previous green candle - strong sell signal</p>
+          </div>
+          <div class="pattern-card">
+            <h3>⚡ Hammer</h3>
+            <p>Small body, long lower wick - reversal signal after downtrend</p>
+          </div>
+          <div class="pattern-card">
+            <h3>🔨 Shooting Star</h3>
+            <p>Small body, long upper wick - reversal signal after uptrend</p>
+          </div>
+          <div class="pattern-card">
+            <h3>💀 Doji</h3>
+            <p>Open = Close, indicates market indecision</p>
+          </div>
+          <div class="pattern-card">
+            <h3>📊 Pin Bar</h3>
+            <p>Long wick with small body - rejection of price level</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support and Resistance -->
+      <section class="section">
+        <h2>Support & Resistance</h2>
+        <p>
+          The foundation of price action trading. Support is where buying pressure overcomes selling pressure. 
+          Resistance is where selling pressure overcomes buying pressure.
+        </p>
+        
+        <div class="sr-tips">
+          <div class="tip-card">
+            <h3>How to Identify</h3>
+            <ul>
+              <li>Previous swing highs/lows</li>
+              <li>Round numbers (1.1000, 1.2000)</li>
+              <li>Trendlines</li>
+              <li>Previous consolidation zones</li>
+            </ul>
+          </div>
+          <div class="tip-card">
+            <h3>Role Reversal</h3>
+            <ul>
+              <li>Support becomes resistance when broken</li>
+              <li>Resistance becomes support when broken</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trend Analysis -->
+      <section class="section">
+        <h2>Trend Analysis</h2>
+        <div class="trend-box">
+          <div class="trend-type">
+            <h3>📈 Uptrend</h3>
+            <p>Higher Highs + Higher Lows</p>
+            <p class="action">Action: Buy on pullbacks to support</p>
+          </div>
+          <div class="trend-type">
+            <h3>📉 Downtrend</h3>
+            <p>Lower Highs + Lower Lows</p>
+            <p class="action">Action: Sell on rallies to resistance</p>
+          </div>
+          <div class="trend-type">
+            <h3>🔄 Range</h3>
+            <p>Price bouncing between support/resistance</p>
+            <p class="action">Action: Buy at support, sell at resistance</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Price Action Strategies -->
+      <section class="section">
+        <h2>Top Price Action Strategies</h2>
+        
+        <div class="strategy">
+          <h3>1. Breakout Trading</h3>
+          <p>Enter when price breaks above resistance or below support with strong momentum.</p>
+          <div class="strategy-tip">💡 Wait for candle to close beyond the level to avoid false breakouts</div>
+        </div>
+
+        <div class="strategy">
+          <h3>2. Pullback Trading</h3>
+          <p>Enter on retracements to key levels in the direction of the trend.</p>
+          <div class="strategy-tip">💡 Look for pin bars or engulfing patterns at pullback levels</div>
+        </div>
+
+        <div class="strategy">
+          <h3>3. False Breakout (Fakey)</h3>
+          <p>Price breaks a level but quickly reverses - trade the reversal.</p>
+          <div class="strategy-tip">💡 Enter on the close of the false breakout candle</div>
+        </div>
+
+        <div class="strategy">
+          <h3>4. Inside Bar Breakout</h3>
+          <p>Trading the breakout of a candle completely inside the previous candle's range.</p>
+        </div>
+      </section>
+
+      <!-- Price Action Setups -->
+      <section class="section">
+        <h2>High Probability Setups</h2>
+        <div class="setups-grid">
+          <div class="setup-card">
+            <h3>🎯 Pin Bar Reversal</h3>
+            <p>Long wick rejecting key level + close near extreme = Reversal signal</p>
+          </div>
+          <div class="setup-card">
+            <h3>⚡ Engulfing Pattern</h3>
+            <p>Full candle engulfing previous = Strong momentum shift</p>
+          </div>
+          <div class="setup-card">
+            <h3>🔑 Key Level Bounce</h3>
+            <p>Price touches support/resistance and shows rejection = Entry signal</p>
+          </div>
+          <div class="setup-card">
+            <h3>📊 Trendline Bounce</h3>
+            <p>Price touches trendline with confirming candle = Trade with trend</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeframes -->
+      <section class="section">
+        <h2>Best Timeframes for Price Action</h2>
+        <div class="timeframes">
+          <div class="tf-card">
+            <h3>Daily (D1)</h3>
+            <p>Best for swing trading - most reliable signals</p>
+          </div>
+          <div class="tf-card">
+            <h3>4 Hour (H4)</h3>
+            <p>Great balance of reliability and frequency</p>
+          </div>
+          <div class="tf-card">
+            <h3>1 Hour (H1)</h3>
+            <p>Good for day trading</p>
+          </div>
+          <div class="tf-card">
+            <h3>15-30 Minutes</h3>
+            <p>For scalping, but more false signals</p>
+          </div>
+        </div>
+        <div class="tip">💡 Always check higher timeframe for overall trend direction</div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="section">
+        <h2>Common Price Action Mistakes</h2>
+        <ul class="mistakes-list">
+          <li>❌ Trading every pattern you see (be selective)</li>
+          <li>❌ Ignoring the higher timeframe trend</li>
+          <li>❌ Not waiting for candle close confirmation</li>
+          <li>❌ Trading against key support/resistance levels</li>
+          <li>❌ Not using stop losses</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Technical Analysis</h2>
+        <div class="next-links">
+          <a href="/TechnicalAnalysis/SmartMoneyConcepts" class="next-link">
+            <span>Smart Money Concepts →</span>
+            <small>Follow the institutional flow</small>
+          </a>
+          <a href="/TechnicalAnalysis/SupplyDemand" class="next-link">
+            <span>Supply & Demand →</span>
+            <small>Key reversal zones</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

@@ -1,0 +1,179 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../../layouts/BaseLayout.astro';
+import './TradingViewGuide.css';
+---
+
+<Layout title="TradingView Guide - NFX Learning">
+  
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>TradingView Guide</h1>
+        <p class="subtitle">Chart like a pro with the world's best charting platform</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Why TradingView?</h2>
+        <p>
+          TradingView is the most advanced and user-friendly charting platform available. Used by millions of traders worldwide,
+          it offers real-time data, social trading features, and powerful analysis tools.
+        </p>
+        
+        <div class="features-grid">
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Free to start</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Cloud-based (no installation)</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>100+ indicators</span>
+          </div>
+          <div class="feature">
+            <span class="check">✓</span>
+            <span>Social trading community</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Getting Started -->
+      <section class="section">
+        <h2>Getting Started</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">1</div>
+            <div class="step-content">
+              <h3>Create Free Account</h3>
+              <p>Visit TradingView.com and sign up for a free account using email or social media.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-icon">2</div>
+            <div class="step-content">
+              <h3>Choose Your Market</h3>
+              <p>Search for any symbol: Forex, Stocks, Crypto, Commodities, or Indices.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-icon">3</div>
+            <div class="step-content">
+              <h3>Start Charting</h3>
+              <p>Use the toolbar to add indicators, drawings, and customize your chart.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Essential Tools -->
+      <section class="section">
+        <h2>Essential Charting Tools</h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h3>📈 Drawing Tools</h3>
+            <ul>
+              <li>Trend Lines</li>
+              <li>Fibonacci Retracement</li>
+              <li>Support & Resistance</li>
+              <li>Channels & Patterns</li>
+            </ul>
+          </div>
+          <div class="tool-card">
+            <h3>📊 Indicators</h3>
+            <ul>
+              <li>Moving Averages</li>
+              <li>RSI, MACD, Bollinger Bands</li>
+              <li>Ichimoku Cloud</li>
+              <li>Volume Profile</li>
+            </ul>
+          </div>
+          <div class="tool-card">
+            <h3>⏰ Timeframes</h3>
+            <ul>
+              <li>1m, 5m, 15m, 1H, 4H</li>
+              <li>Daily, Weekly, Monthly</li>
+              <li>Range Bars & Renko</li>
+              <li>Heikin Ashi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pro Features -->
+      <section class="section">
+        <h2>Pro Features Worth Upgrading For</h2>
+        <div class="pro-grid">
+          <div class="pro-card">
+            <h3>Multiple Charts</h3>
+            <p>View up to 8 charts simultaneously on one screen</p>
+          </div>
+          <div class="pro-card">
+            <h3>More Indicators</h3>
+            <p>Access 200+ indicators and 100+ drawing tools</p>
+          </div>
+          <div class="pro-card">
+            <h3>Real-time Data</h3>
+            <p>Live streaming data with no delay</p>
+          </div>
+          <div class="pro-card">
+            <h3>Alert Triggers</h3>
+            <p>Set unlimited price and indicator alerts</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pine Script -->
+      <section class="section">
+        <h2>Custom Indicators with Pine Script</h2>
+        <p>
+          TradingView's proprietary Pine Script language lets you create custom indicators and strategies.
+          Thousands of community-built scripts are available for free in the Public Library.
+        </p>
+        <div class="code-example">
+          <pre><code>//@version=5
+indicator("My First Indicator", overlay=true)
+plot(close, "Close Price", color.blue)</code></pre>
+        </div>
+      </section>
+
+      <!-- Tips & Tricks -->
+      <section class="section">
+        <h2>Pro Tips & Tricks</h2>
+        <ul class="tips-list">
+          <li><strong>Ctrl + Mouse Wheel</strong> - Zoom in/out of chart</li>
+          <li><strong>Alt + S</strong> - Compare symbols</li>
+          <li><strong>Shift + S</strong> - Take screenshot</li>
+          <li><strong>Double-click</strong> any indicator to edit settings</li>
+          <li><strong>Save chart templates</strong> for different trading strategies</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Ready to Master TradingView?</h2>
+        <div class="next-links">
+          <a href="/Learn/PlatformTools/MetaTrader" class="next-link">
+            <span>MetaTrader Guide →</span>
+            <small>Master the industry standard</small>
+          </a>
+          <a href="/Learn/PlatformTools/AutomatedTrading" class="next-link">
+            <span>Automated Trading →</span>
+            <small>EAs and bots explained</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

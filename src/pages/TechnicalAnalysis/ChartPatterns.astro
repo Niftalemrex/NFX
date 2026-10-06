@@ -1,0 +1,298 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './ChartPatterns.css';
+---
+
+<Layout title="Chart Patterns - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Chart Patterns</h1>
+        <p class="subtitle">Head & shoulders, triangles, and other classic patterns for price prediction</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What are Chart Patterns?</h2>
+        <p>
+          Chart patterns are recognizable formations on price charts that indicate potential future price movements. 
+          They are based on the psychology of market participants and repeat across all timeframes and markets.
+        </p>
+        
+        <div class="pattern-categories">
+          <div class="category">📈 Reversal Patterns</div>
+          <div class="category">🔄 Continuation Patterns</div>
+          <div class="category">⚡ Bilateral Patterns</div>
+        </div>
+      </section>
+
+      <!-- Head and Shoulders -->
+      <section class="section">
+        <h2>Head and Shoulders (Reversal)</h2>
+        <p>
+          One of the most reliable reversal patterns. Signals a trend change from bullish to bearish.
+        </p>
+        
+        <div class="pattern-card">
+          <div class="pattern-header">
+            <h3>🔴 Head and Shoulders Top</h3>
+            <span class="pattern-type">Bearish Reversal</span>
+          </div>
+          <div class="pattern-content">
+            <div class="pattern-components">
+              <div class="component-item">
+                <strong>Left Shoulder</strong>
+                <p>First peak after uptrend</p>
+              </div>
+              <div class="component-item">
+                <strong>Head</strong>
+                <p>Higher peak than shoulders</p>
+              </div>
+              <div class="component-item">
+                <strong>Right Shoulder</strong>
+                <p>Lower peak than head</p>
+              </div>
+              <div class="component-item">
+                <strong>Neckline</strong>
+                <p>Support line connecting lows</p>
+              </div>
+            </div>
+            
+            <h4>How to Trade:</h4>
+            <ul>
+              <li>Entry: When price breaks below neckline</li>
+              <li>Stop Loss: Above the right shoulder</li>
+              <li>Target: Height from head to neckline projected down</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pattern-card">
+          <div class="pattern-header">
+            <h3>🟢 Inverse Head and Shoulders</h3>
+            <span class="pattern-type">Bullish Reversal</span>
+          </div>
+          <div class="pattern-content">
+            <div class="pattern-components">
+              <div class="component-item">
+                <strong>Left Shoulder</strong>
+                <p>First trough after downtrend</p>
+              </div>
+              <div class="component-item">
+                <strong>Head</strong>
+                <p>Lower trough than shoulders</p>
+              </div>
+              <div class="component-item">
+                <strong>Right Shoulder</strong>
+                <p>Higher trough than head</p>
+              </div>
+              <div class="component-item">
+                <strong>Neckline</strong>
+                <p>Resistance line connecting highs</p>
+              </div>
+            </div>
+            
+            <h4>How to Trade:</h4>
+            <ul>
+              <li>Entry: When price breaks above neckline</li>
+              <li>Stop Loss: Below the right shoulder</li>
+              <li>Target: Height from head to neckline projected up</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Double Top/Bottom -->
+      <section class="section">
+        <h2>Double Top & Double Bottom</h2>
+        <p>
+          Classic reversal patterns that signal trend exhaustion after two failed attempts to break a level.
+        </p>
+        
+        <div class="patterns-row">
+          <div class="small-pattern-card">
+            <h3>Double Top</h3>
+            <span>Bearish Reversal</span>
+            <p>Two peaks at similar level after uptrend</p>
+            <div class="trade-info">Entry: Break below support</div>
+          </div>
+          <div class="small-pattern-card">
+            <h3>Double Bottom</h3>
+            <span>Bullish Reversal</span>
+            <p>Two troughs at similar level after downtrend</p>
+            <div class="trade-info">Entry: Break above resistance</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Triangles -->
+      <section class="section">
+        <h2>Triangle Patterns (Continuation)</h2>
+        <p>
+          Triangle patterns represent consolidation before the trend continues. As the pattern progresses, 
+          price makes lower highs and higher lows, converging toward an apex.
+        </p>
+        
+        <div class="triangles-grid">
+          <div class="triangle-card">
+            <h3>📐 Ascending Triangle</h3>
+            <p>Flat resistance, rising support - Bullish</p>
+            <div class="trade">Break above resistance = Buy signal</div>
+          </div>
+          <div class="triangle-card">
+            <h3>📐 Descending Triangle</h3>
+            <p>Flat support, falling resistance - Bearish</p>
+            <div class="trade">Break below support = Sell signal</div>
+          </div>
+          <div class="triangle-card">
+            <h3>📐 Symmetrical Triangle</h3>
+            <p>Converging support and resistance - Breakout direction</p>
+            <div class="trade">Trade in direction of breakout</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Wedges -->
+      <section class="section">
+        <h2>Wedge Patterns</h2>
+        <div class="wedge-grid">
+          <div class="wedge-card">
+            <h3>📈 Rising Wedge</h3>
+            <p>Both trendlines sloping up - Bearish reversal</p>
+            <ul>
+              <li>Usually forms after uptrend</li>
+              <li>Break below = Sell signal</li>
+            </ul>
+          </div>
+          <div class="wedge-card">
+            <h3>📉 Falling Wedge</h3>
+            <p>Both trendlines sloping down - Bullish reversal</p>
+            <ul>
+              <li>Usually forms after downtrend</li>
+              <li>Break above = Buy signal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flags and Pennants -->
+      <section class="section">
+        <h2>Flags & Pennants (Continuation)</h2>
+        <p>
+          Short-term consolidation patterns that form after sharp price movements, indicating trend continuation.
+        </p>
+        
+        <div class="flags-grid">
+          <div class="flag-card">
+            <h3>🚩 Bull Flag</h3>
+            <p>Sharp rise (flagpole) followed by downward sloping consolidation</p>
+            <div class="trade">Break above flag = Buy</div>
+          </div>
+          <div class="flag-card">
+            <h3>🚩 Bear Flag</h3>
+            <p>Sharp drop (flagpole) followed by upward sloping consolidation</p>
+            <div class="trade">Break below flag = Sell</div>
+          </div>
+          <div class="flag-card">
+            <h3>🏴 Pennant</h3>
+            <p>Small symmetrical triangle after sharp move</p>
+            <div class="trade">Breakout direction = Trade direction</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cup and Handle -->
+      <section class="section">
+        <h2>Cup and Handle (Bullish Continuation)</h2>
+        <p>
+          A long-term bullish pattern that resembles a teacup. Forms after an uptrend, consolidates in a U-shape (cup), 
+          then a small pullback (handle) before breaking higher.
+        </p>
+        
+        <div class="cup-handle">
+          <div class="cup-info">
+            <strong>Cup:</strong> U-shaped rounding bottom (minimum 7 weeks)
+          </div>
+          <div class="handle-info">
+            <strong>Handle:</strong> Small pullback (1-4 weeks)
+          </div>
+          <div class="trade-info">
+            <strong>Entry:</strong> Break above handle's high
+          </div>
+        </div>
+      </section>
+
+      <!-- Pattern Reliability -->
+      <section class="section">
+        <h2>What Makes a Pattern Reliable?</h2>
+        <div class="reliability-grid">
+          <div class="reliability-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Higher Timeframe</h3>
+              <p>Daily/Weekly patterns are more reliable than 5-minute patterns</p>
+            </div>
+          </div>
+          <div class="reliability-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Volume Confirmation</h3>
+              <p>Volume should increase on breakout</p>
+            </div>
+          </div>
+          <div class="reliability-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Clear Pattern</h3>
+              <p>Well-defined, symmetrical patterns work best</p>
+            </div>
+          </div>
+          <div class="reliability-card">
+            <span class="check">✓</span>
+            <div>
+              <h3>Trend Context</h3>
+              <p>Reversal patterns need prior trend, continuation patterns need trend to continue</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="section">
+        <h2>Common Chart Pattern Mistakes</h2>
+        <ul class="mistakes-list">
+          <li>❌ Trading patterns that aren't clearly formed</li>
+          <li>❌ Entering before the pattern completes (before breakout)</li>
+          <li>❌ Ignoring the overall trend context</li>
+          <li>❌ Not waiting for breakout confirmation</li>
+          <li>❌ Using patterns on very low timeframes (1-5 minutes)</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Complete Your Technical Analysis Learning</h2>
+        <div class="next-links">
+          <a href="/TechnicalAnalysis/Indicators" class="next-link">
+            <span>Technical Indicators →</span>
+            <small>RSI, MACD, Bollinger Bands</small>
+          </a>
+          <a href="/TechnicalAnalysis/SupplyDemand" class="next-link">
+            <span>Supply & Demand →</span>
+            <small>Key reversal zones</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+ 
+</Layout>

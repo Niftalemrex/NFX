@@ -1,0 +1,210 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './SupplyDemand.css';
+---
+
+<Layout title="Supply & Demand Trading - NFX Learning">
+=
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Supply & Demand Trading</h1>
+        <p class="subtitle">Key reversal zones - Understanding where institutions enter and exit</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>What is Supply & Demand?</h2>
+        <p>
+          Supply and Demand zones are areas on the chart where institutional traders have previously shown significant 
+          interest. Supply zones are selling areas, while demand zones are buying areas. These zones often cause strong reversals.
+        </p>
+        
+        <div class="comparison">
+          <div class="compare-card">
+            <h3>📉 Supply Zone (Resistance)</h3>
+            <p>Area where sellers overwhelmed buyers. Price is likely to reverse down.</p>
+          </div>
+          <div class="compare-card">
+            <h3>📈 Demand Zone (Support)</h3>
+            <p>Area where buyers overwhelmed sellers. Price is likely to reverse up.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Identify -->
+      <section class="section">
+        <h2>How to Identify Supply & Demand Zones</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <div>
+              <h3>Find Strong Moves</h3>
+              <p>Look for large impulsive candles with little to no wicks</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <div>
+              <h3>Identify the Base</h3>
+              <p>The candles BEFORE the impulsive move</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <div>
+              <h3>Draw the Zone</h3>
+              <p>Mark the high and low of the base candles</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">4</span>
+            <div>
+              <h3>Wait for Return</h3>
+              <p>Price often returns to these zones before continuing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Zone Types -->
+      <section class="section">
+        <h2>Types of Supply & Demand Zones</h2>
+        <div class="zone-types">
+          <div class="zone-card">
+            <h3>Fresh Zone</h3>
+            <p>Price hasn't returned to this zone since it was formed - strongest</p>
+          </div>
+          <div class="zone-card">
+            <h3>Tested Zone</h3>
+            <p>Price has visited once - still valid but weaker</p>
+          </div>
+          <div class="zone-card">
+            <h3>Rally Base Rally (RBR)</h3>
+            <p>Demand zone formed during an uptrend</p>
+          </div>
+          <div class="zone-card">
+            <h3>Drop Base Rally (DBR)</h3>
+            <p>Supply zone formed during a downtrend</p>
+          </div>
+          <div class="zone-card">
+            <h3>Rally Base Drop (RBD)</h3>
+            <p>Supply zone formed after a rally</p>
+          </div>
+          <div class="zone-card">
+            <h3>Drop Base Drop (DBD)</h3>
+            <p>Demand zone formed after a drop</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Zone Strength -->
+      <section class="section">
+        <h2>What Makes a Zone Strong?</h2>
+        <div class="strength-grid">
+          <div class="strength-card">
+            <h3>✅ Higher Timeframe</h3>
+            <p>Daily/Weekly zones > 4H zones > 1H zones</p>
+          </div>
+          <div class="strength-card">
+            <h3>✅ Multiple Touches</h3>
+            <p>Zones with 1-2 tests are strongest</p>
+          </div>
+          <div class="strength-card">
+            <h3>✅ Fresh Zone</h3>
+            <p>Untested zones are more powerful</p>
+          </div>
+          <div class="strength-card">
+            <h3>✅ Clear Base</h3>
+            <p>Well-defined consolidation before the move</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trading Strategy -->
+      <section class="section">
+        <h2>Trading Supply & Demand</h2>
+        
+        <div class="strategy-box">
+          <h3>For Demand Zones (Buy):</h3>
+          <ul>
+            <li>Identify demand zone on higher timeframe</li>
+            <li>Drop to lower timeframe for entry</li>
+            <li>Look for reversal candlestick patterns</li>
+            <li>Place stop loss below the zone</li>
+            <li>Target next supply zone or resistance</li>
+          </ul>
+        </div>
+        
+        <div class="strategy-box">
+          <h3>For Supply Zones (Sell):</h3>
+          <ul>
+            <li>Identify supply zone on higher timeframe</li>
+            <li>Drop to lower timeframe for entry</li>
+            <li>Look for reversal candlestick patterns</li>
+            <li>Place stop loss above the zone</li>
+            <li>Target next demand zone or support</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Entry Techniques -->
+      <section class="section">
+        <h2>Entry Techniques</h2>
+        <div class="entry-grid">
+          <div class="entry-card">
+            <h3>Limit Order</h3>
+            <p>Place order directly at the zone boundary</p>
+            <span class="risk">Risk: Zone might not hold</span>
+          </div>
+          <div class="entry-card">
+            <h3>Confirmation Entry</h3>
+            <p>Wait for reversal candle close before entering</p>
+            <span class="reward">Reward: Higher probability</span>
+          </div>
+          <div class="entry-card">
+            <h3>Breakout Retest</h3>
+            <p>Wait for breakout and retest of the zone</p>
+            <span class="reward">Reward: Most confirmation</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Mistakes -->
+      <section class="section">
+        <h2>Common Mistakes</h2>
+        <ul class="mistakes">
+          <li>❌ Drawing zones that are too wide</li>
+          <li>❌ Trading zones on lower timeframes only</li>
+          <li>❌ Forcing zones where none exist</li>
+          <li>❌ Not waiting for confirmation</li>
+          <li>❌ Ignoring overall trend direction</li>
+        </ul>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Technical Analysis</h2>
+        <div class="next-links">
+          <a href="/TechnicalAnalysis/Indicators" class="next-link">
+            <span>Technical Indicators →</span>
+            <small>RSI, MACD, Bollinger Bands</small>
+          </a>
+          <a href="/TechnicalAnalysis/ChartPatterns" class="next-link">
+            <span>Chart Patterns →</span>
+            <small>Head & shoulders, triangles</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>

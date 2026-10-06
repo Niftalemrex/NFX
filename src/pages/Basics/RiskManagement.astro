@@ -1,0 +1,236 @@
+---
+// Astro component frontmatter
+
+import Layout from '../../layouts/BaseLayout.astro';
+import './RiskManagement.css';
+---
+
+<Layout title="Risk Management - NFX Learning">
+ 
+  
+  <main class="page-container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Risk Management</h1>
+        <p class="subtitle">Protect your capital - The most important skill in trading</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Introduction -->
+      <section class="section">
+        <h2>Why Risk Management Matters</h2>
+        <p>
+          Professional traders focus on risk management first, profits second. Without proper risk management, 
+          no trading strategy can succeed long-term. Protect your capital, and the profits will follow.
+        </p>
+        
+        <div class="rule-box">
+          <p class="golden-rule">🏆 The Golden Rule: Never risk more than you can afford to lose</p>
+        </div>
+      </section>
+
+      <!-- The 1% Rule -->
+      <section class="section">
+        <h2>The 1% Rule</h2>
+        <p>
+          Never risk more than 1-2% of your trading account on a single trade. This ensures that a series of losses 
+          won't wipe out your account.
+        </p>
+        
+        <div class="example-box">
+          <h3>Example:</h3>
+          <ul>
+            <li>Account balance: $10,000</li>
+            <li>Risk per trade (1%): $100</li>
+            <li>Stop loss: 20 pips</li>
+            <li>Position size: $5 per pip ($100 ÷ 20 pips)</li>
+          </ul>
+        </div>
+        
+        <div class="drawdown-table">
+          <h3>Account Drawdown Impact:</h3>
+          <div class="table">
+            <div class="row header">
+              <span>Losses in a Row</span>
+              <span>2% Risk/Trade</span>
+              <span>5% Risk/Trade</span>
+              <span>10% Risk/Trade</span>
+            </div>
+            <div class="row">
+              <span>5 Losses</span>
+              <span>-10%</span>
+              <span class="bad">-25%</span>
+              <span class="bad">-50%</span>
+            </div>
+            <div class="row">
+              <span>10 Losses</span>
+              <span>-20%</span>
+              <span class="bad">-50%</span>
+              <span class="bad">-90%</span>
+            </div>
+            <div class="row">
+              <span>15 Losses</span>
+              <span>-30%</span>
+              <span class="bad">-75%</span>
+              <span class="bad">-99%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stop Losses -->
+      <section class="section">
+        <h2>Stop Losses - Your Best Friend</h2>
+        <p>
+          A stop loss is an order to close a trade at a predetermined price to limit losses. Every trade must have a stop loss.
+        </p>
+        
+        <div class="stop-types">
+          <div class="stop-card">
+            <h3>Fixed Stop</h3>
+            <p>Set at a fixed pip distance from entry</p>
+            <div class="example">Example: Buy at 1.1000, Stop at 1.0980 (20 pips)</div>
+          </div>
+          <div class="stop-card">
+            <h3>ATR Stop</h3>
+            <p>Based on market volatility (2x ATR)</p>
+            <div class="example">Example: ATR = 10 pips → Stop = 20 pips</div>
+          </div>
+          <div class="stop-card">
+            <h3>Technical Stop</h3>
+            <p>Placed below support or above resistance</p>
+            <div class="example">Example: Below recent swing low</div>
+          </div>
+          <div class="stop-card">
+            <h3>Trailing Stop</h3>
+            <p>Moves with price to lock in profits</p>
+            <div class="example">Example: Moves up as price rises</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Position Sizing -->
+      <section class="section">
+        <h2>Position Sizing Formula</h2>
+        <div class="formula-box">
+          <p class="formula">Position Size = (Account Risk × Pip Value) / Stop Loss in Pips</p>
+        </div>
+        
+        <div class="example-calc">
+          <h3>Step-by-Step Example:</h3>
+          <ul>
+            <li>Account: $10,000</li>
+            <li>Risk: 1% ($100)</li>
+            <li>Stop Loss: 25 pips</li>
+            <li>Pip Value (EUR/USD): $10 per standard lot</li>
+            <li>Position Size = ($100 × $10) / 25 = 40,000 units (0.4 lots)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Risk Reward Ratio -->
+      <section class="section">
+        <h2>Risk to Reward Ratio (R:R)</h2>
+        <p>
+          Always ensure your potential profit is greater than your potential loss. Minimum 1.5:1, ideally 2:1 or higher.
+        </p>
+        
+        <div class="rr-examples">
+          <div class="rr-card good">
+            <h3>Good: 2:1</h3>
+            <p>Risk: 20 pips | Reward: 40 pips</p>
+            <span>Need only 34% win rate to break even</span>
+          </div>
+          <div class="rr-card better">
+            <h3>Better: 3:1</h3>
+            <p>Risk: 20 pips | Reward: 60 pips</p>
+            <span>Need only 25% win rate to break even</span>
+          </div>
+          <div class="rr-card bad">
+            <h3>Bad: 1:1</h3>
+            <p>Risk: 20 pips | Reward: 20 pips</p>
+            <span>Need 50% win rate to break even</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Maximum Drawdown -->
+      <section class="section">
+        <h2>Managing Maximum Drawdown</h2>
+        <p>
+          Drawdown is the peak-to-trough decline during a trading period. Set daily, weekly, and monthly loss limits.
+        </p>
+        
+        <div class="drawdown-limits">
+          <div class="limit-card">
+            <h3>Daily Limit</h3>
+            <p>Stop trading after losing 2-3% of account in one day</p>
+          </div>
+          <div class="limit-card">
+            <h3>Weekly Limit</h3>
+            <p>Stop trading after losing 5-6% of account in one week</p>
+          </div>
+          <div class="limit-card">
+            <h3>Monthly Limit</h3>
+            <p>Re-evaluate strategy after losing 10-15% in a month</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Correlation Risk -->
+      <section class="section">
+        <h2>Correlation Risk</h2>
+        <p>
+          Trading correlated pairs multiplies your risk. Be aware of how your positions relate to each other.
+        </p>
+        
+        <div class="correlation-table">
+          <div class="correlation positive">
+            <h3>Positive Correlation (+)</h3>
+            <p>EUR/USD & GBP/USD → Move together</p>
+            <p>USD/CHF & USD/JPY → Move together</p>
+          </div>
+          <div class="correlation negative">
+            <h3>Negative Correlation (-)</h3>
+            <p>EUR/USD & USD/CHF → Move opposite</p>
+            <p>GBP/USD & USD/JPY → Move opposite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Risk Checklist -->
+      <section class="section">
+        <h2>Pre-Trade Risk Checklist</h2>
+        <div class="checklist">
+          <div class="check-item">✓ Stop loss placed before entering trade</div>
+          <div class="check-item">✓ Risk per trade ≤ 1-2% of account</div>
+          <div class="check-item">✓ Risk to reward ratio ≥ 1.5:1</div>
+          <div class="check-item">✓ Position size calculated correctly</div>
+          <div class="check-item">✓ Not over-trading (max 3-5 concurrent positions)</div>
+          <div class="check-item">✓ No correlated pairs doubling risk</div>
+          <div class="check-item">✓ Daily loss limit not reached</div>
+        </div>
+      </section>
+
+      <!-- Next Steps -->
+      <section class="section next-steps">
+        <h2>Continue Learning Basics</h2>
+        <div class="next-links">
+          <a href="/Basics/MoneyManagement" class="next-link">
+            <span>Money Management →</span>
+            <small>Position sizing & leverage</small>
+          </a>
+          <a href="/Basics/TradingPsychology" class="next-link">
+            <span>Trading Psychology →</span>
+            <small>Master your emotions</small>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+
+</Layout>
